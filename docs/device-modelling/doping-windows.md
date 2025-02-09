@@ -5,40 +5,36 @@ sidebar_position: 5
 # Doping Windows
 
 ## Overview
-One of the most important features of the Aquarius's device modelling capabilities is the ability to define the geometry of a device's regions using the Rectangle, Rounded Rectangle, Polygon and Import from CSV drawing functions.
+Doping windows are used to specify an implant/diffusion doping profile through a window. The vertical profile maybe a Gaussian, a complementary Error function or a user specified profile. Doping windows can also be projected in the upward or downward directions or even in both directions simultaneously. The doping profile of a device is built-up using region doping and horizontal doping windows, which are summed to give a total doping concentration.
 
-After the outline geometry of a device has been drawn, the regions properties can be defined and material properties assigned to them.
-
-
-## How to use
-To define a region:
-1. From the Menu, select Define -> Region and select the type of geometry you would like to define (Rectangle, Polygon etc.).
+## Usage Instructions
+To define a doping window:
+1. From the Menu, select Define -> Window -> Doping.
 
 <p align="center">
   <img src="/img/02.png" alt="Centered Image" width="800"/>
 </p>
 
-2. Use your cursor and mouse buttons to define the region shape. Or if importing geometry from a .csv file, select the file you want to use.
+2. Use your cursor and mouse buttons to define a rectangular doping window.
 
-3. Once the region's shape has been defined the region properties dialog box will appear.  Use this dialog to set the region's properties.
+3. Once the windows shape has been defined the doping windows properties dialog box will appear.  Use this dialog to set the region's properties.
 
 <p align="center">
-  <img src="/img/03.png" alt="Centered Image" width="800"/>
+  <img src="/img/doping-window/doping-window-properties.png" alt="Centered Image" width="800"/>
 </p>
 
-## Properties
-
-## Region Properties
+## Doping Window Properties
 ### General
-<div class="properties-table">
+
 
 | Name        | Description                                                 | Unit       |
 |-------------|-------------------------------------------------------------|------------|
-| `Name`     | A unique identifier for the region.                      | -          |
-| `Material`     | Used to define the material properties of the region.     | -          |
+| `Name`     | A unique identifier for the window.                      | -          |
 | `Colour`     | Used to define visual colour of the region (Not used in the solver). | -          |
+| `Edge Symmetry` | Used to select the shape of the diffusion. Options: [Normal, Left Symmetric, Right Symmetric or Double Symmetric] | -          |
+| `Directrion` | Used to select the direction of the implant. Options: [Upwards, Downwards, Both] | -          |
+| `Doping` | Used to specify the type of doping implant. Options: [Donor, Acceptor] | -          |
 
-</div>
 
 Available materials include Si, SiC, Oxide, Air (more coming soon). The properties of these materials can be fully customised by the user during setup of the device model. There are two general types of semiconductor can be defined, namely:  
 - Single Composition (e.g. Si, GaAs, SiC)
