@@ -62,16 +62,16 @@ Ensure you have the following installed before proceeding:
 - **Node.js**: Version **18 or higher** 
   - If needed, download the latest version from [nodejs.org](https://nodejs.org/). 
   - Check your Node.js version:  
-```sh
-node -v
-```
+  ```sh
+  node -v
+  ```
 
 
 - **npm**: Installed with Node.js  
   - Verify this with:  
-```sh
-npm -v
-```
+  ```sh
+  npm -v
+  ```
 
 ### Installation  
 
