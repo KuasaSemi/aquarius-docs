@@ -1,9 +1,13 @@
 <p align="center">
-  <img alt="KuasaSemi logo" src="static/img/02.png" width="75px" />
+  <img alt="KuasaSemi logo" src="static/img/logo/kuasasemi-logo.png" width="200px" />
   <h1 align="center">Aquarius TCAD Documentation</h1>
 </p>
 
 The repository holds the code and markdown source files for the Aquarius documentation website, which is accessible at [docs.kuasasemi.com](https://docs.kuasasemi.com)
+
+These docs are built using [Docusaurus](https://docusaurus.io/), a modern static site generator that makes it easy to create and maintain documentation websites.
+
+🚀 Get started by exploring the sections below!
 
 ## Index
 - [Index](#index)
