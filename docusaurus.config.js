@@ -65,7 +65,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'My Site Logo',
-          src: 'img/Asset 1@3x.png',
+          src: 'img/logo/kuasasemi-logo.png',
         },
         items: [
           {
