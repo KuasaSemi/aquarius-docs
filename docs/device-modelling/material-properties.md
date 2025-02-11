@@ -67,3 +67,57 @@ To edit or view the material properties:
 | `E_trap`     | Trap energy relative to the intrinsic Fermi-level.                              | eV     |
 
 </div>
+
+
+
+### Recombination Properties
+
+<div class="properties-table">
+
+| Name       | Description                                         | Unit        |
+|------------|-----------------------------------------------------|------------|
+| `SRH_TAU_p`  | Minority carrier lifetimes.                         | secs       |
+| `SRH_Ap`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Bp`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Cp`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Dp`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Nrefp`  | Reference doping concentrations for lifetime models. | cm⁻³       |
+| `SRH_TAU_n`  | Minority carrier lifetimes.                         | secs       |
+| `SRH_An`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Bn`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Cn`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Dn`     | Coefficients used in doping dependent lifetime models. | -          |
+| `SRH_Nrefn`  | Reference doping concentrations for lifetime models. | cm⁻³       |
+| `Auger_Cp`   | Auger coefficients.                                | cm⁶ s⁻¹    |
+| `Auger_Cn`   | Auger coefficients.                                | cm⁶ s⁻¹    |
+| `Direct_C`  | Direct recombination coefficient.                  | cm³ s⁻¹    |
+| `Av_alph_p`  | Avalanche prefactor coefficients.                  | cm⁻¹       |
+| `Av_beta_p`  | Avalanche exponential coefficients.                | V/cm       |
+| `Av_alph_n`  | Avalanche prefactor coefficients.                  | cm⁻¹       |
+| `Av_beta_n`  | Avalanche exponential coefficients.                | V/cm       |
+
+</div>
+
+### Optical Properties
+
+<div class="properties-table">
+
+| Name       | Description                     | Unit  |
+|------------|---------------------------------|------|
+| `Abscoeff` | Optical absorption coefficient. | cm⁻¹ |
+
+</div>
+
+### Thermal Properties
+
+<div class="properties-table">
+
+| Name       | Description                                           | Unit |
+|------------|-------------------------------------------------------|------|
+| `Ther_cond`  | Thermal conductivity                                  | -    |
+| `Heat_Capa`  | Thermal heat capacity                                 | -    |
+| `Ther_coef`  | Coefficient for thermal conductivity                 | -    |
+| `Vs_coefTp`  | Coefficients for temperature dependent saturation velocity | - |
+| `Vs_coefTn`  | Coefficients for temperature dependent saturation velocity | - |
+
+</div>
