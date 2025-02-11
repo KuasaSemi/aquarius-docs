@@ -10,13 +10,13 @@ To edit or view the material properties:
 1. From the main menu, select Model -> Material Library.
 
 <p align="center">
-  <img src="/img/04.png" alt="Centered Image" width="800"/>
+  <img src="/img/04.png" width="800"/>
 </p>
 
 2. In the materials library, users can edit, delete, import, and export individual materials as Material Properties (.mat) files or manage the entire library as Material Library (.mlb) files. Users can modify the properties of each material or define entirely new materials.
 
 <p align="center">
-  <img src="/img/05.png" alt="Centered Image" width="300"/>
+  <img src="/img/05.png" width="300"/>
 </p>
 
 ## Parameters
