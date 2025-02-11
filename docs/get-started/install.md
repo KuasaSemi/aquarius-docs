@@ -1,0 +1,66 @@
+---
+sidebar_position: 1
+---
+# Install
+
+## Supported Platforms
+
+Aquarius has can be created for the following platforms:
+
+* Windows 8.1
+* Windows 10
+* Windows 11
+
+While Aquarius  will successfully run on Windows 7, this legacy platform receives limited support. We no longer provide bug fixes for Windows 7-specific issues.
+
+## Install
+
+To begin the installation process first contact [KuasaSemi Sales](mailto:admin@kuasasemi.com) to obtain the installer executable package.
+
+
+Follow these steps to install Aquarius on your Windows system.
+
+### Start the Installer
+Run the Aquarius Setup executable. You will see the welcome screen.
+Click Next to continue.
+
+<p align="center">
+![image](./img/install-1.png)
+</p>
+
+<!-- Paste this code inside your Markdown file -->
+
+<p align="center">
+  <img src="/img/02.png" width="800"/>
+</p>
+
+
+### Accept the License Agreement
+Carefully read through the license agreement. You must accept the terms to proceed with the installation.
+If you are happy to accept the terms then select "I accept the terms in the License Agreement" and click Next.
+
+
+![Docs Version Dropdown](./img/install-1.png)
+
+### Choose Install Location
+Select the directory where you want to install Aquarius. By default, it installs to:
+```sh
+C:\Program Files (x86)\Aquarius
+```
+It is recommended to install at the default location.
+
+
+
+
+Click Install to begin the installation.
+
+### Completing the Installation
+Once the installation is finished, you will see the completion screen.
+
+
+Click Finish to close the setup.
+
+### Troubleshooting
+If the installation fails, ensure you have admin privileges.
+Make sure you have at least 100MB of free space.
+Disable antivirus temporarily if installation is blocked.

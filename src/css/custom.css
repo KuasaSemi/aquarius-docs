@@ -52,3 +52,12 @@ table {
 .properties-table td:nth-child(3) {
   width: 10%;
 }
+
+.navbar__logo {
+  height: 50px !important; /* Adjust this size as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar {
+  min-height: 70px !important; /* Adjust navbar height */
+}

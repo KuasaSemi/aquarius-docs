@@ -8,6 +8,20 @@ module.exports = {
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
 
+  themeConfig: {
+    navbar: {
+      logo: {
+        alt: "Docusaurus Logo",
+        src: "img/logo/kuasasemi-logo-light.png", // Default (Light Mode)
+        srcDark: "img/logo/kuasasemi-logo-dark.png", // Dark Mode Logo
+      },
+      items: [
+        { to: "/docs/intro", label: "Docs", position: "right" },
+        { href: "https://github.com/your-repo", label: "GitHub", position: "right" },
+      ],
+    },
+  },
+
   presets: [
     [
       "@docusaurus/preset-classic",
