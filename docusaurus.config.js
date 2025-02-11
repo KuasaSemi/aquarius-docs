@@ -2,7 +2,7 @@ const math = require("remark-math");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: "Docusaurus",
+  title: "Aquarius Docs",
   tagline: "Build optimized websites quickly, focus on your content",
 
   url: "https://your-docusaurus-test-site.com",

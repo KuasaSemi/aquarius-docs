@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Install
+# Installation
 
 ## Supported Platforms
 
@@ -25,38 +25,39 @@ Run the Aquarius Setup executable. You will see the welcome screen.
 Click Next to continue.
 
 <p align="center">
-![image](./img/install-1.png)
+  <img src="/img/get-started/installation/install-1.png" width="800"/>
 </p>
-
-<!-- Paste this code inside your Markdown file -->
-
-<p align="center">
-  <img src="/img/02.png" width="800"/>
-</p>
-
 
 ### Accept the License Agreement
 Carefully read through the license agreement. You must accept the terms to proceed with the installation.
 If you are happy to accept the terms then select "I accept the terms in the License Agreement" and click Next.
 
-
-![Docs Version Dropdown](./img/install-1.png)
+<p align="center">
+  <img src="/img/get-started/installation/install-2.png" width="800"/>
+</p>
 
 ### Choose Install Location
+
 Select the directory where you want to install Aquarius. By default, it installs to:
+
 ```sh
 C:\Program Files (x86)\Aquarius
 ```
+
 It is recommended to install at the default location.
 
-
-
+<p align="center">
+  <img src="/img/get-started/installation/install-3.png" width="800"/>
+</p>
 
 Click Install to begin the installation.
 
 ### Completing the Installation
 Once the installation is finished, you will see the completion screen.
 
+<p align="center">
+  <img src="/img/get-started/installation/install-4.png" width="800"/>
+</p>
 
 Click Finish to close the setup.
 
