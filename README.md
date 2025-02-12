@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="KuasaSemi logo" src="static/img/logo/kuasasemi-logo.png" width="200px" />
+  <img alt="KuasaSemi logo" src="static/img/logo/kuasasemi-logo-dark.png" width="200px" />
   <h1 align="center">Aquarius TCAD Documentation</h1>
 </p>
 
