@@ -5,10 +5,13 @@ module.exports = {
   title: "Aquarius Docs",
   tagline: "Build optimized websites quickly, focus on your content",
 
+  favicon: "img/favicon.ico",
+
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
 
   themeConfig: {
+    // Navigation Bar
     navbar: {
       logo: {
         alt: "Docusaurus Logo",
@@ -17,8 +20,41 @@ module.exports = {
       },
       items: [
         { to: "/docs/intro", label: "Docs", position: "right" },
-        { href: "https://github.com/your-repo", label: "GitHub", position: "right" },
+        { href: "https://github.com/KuasaSemi", label: "GitHub", position: "right" },
       ],
+    },
+    // Footer
+    footer: {
+      style: "dark", // or "light"
+      links: [
+        {
+          title: "Company",
+          items: [
+            {
+              label: "About Us",
+              href: "/about",
+            },
+            {
+              label: "Careers",
+              href: "/careers",
+            },
+          ],
+        },
+        {
+          title: "Legal",
+          items: [
+            {
+              label: "Privacy Policy",
+              href: "/privacy",
+            },
+            {
+              label: "Terms of Service",
+              href: "/terms",
+            },
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} KuasaSemi Ltd. All rights reserved.`,
     },
   },
 

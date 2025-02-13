@@ -25,7 +25,7 @@ Run the Aquarius Setup executable. You will see the welcome screen.
 Click Next to continue.
 
 <p align="center">
-  <img src="/img/get-started/installation/install-1.png" width="800"/>
+  <img src="/img/get-started/installation/install-1.png"/>
 </p>
 
 ### Accept the License Agreement
@@ -33,7 +33,7 @@ Carefully read through the license agreement. You must accept the terms to proce
 If you are happy to accept the terms then select "I accept the terms in the License Agreement" and click Next.
 
 <p align="center">
-  <img src="/img/get-started/installation/install-2.png" width="800"/>
+  <img src="/img/get-started/installation/install-2.png"/>
 </p>
 
 ### Choose Install Location
@@ -47,7 +47,7 @@ C:\Program Files (x86)\Aquarius
 It is recommended to install at the default location.
 
 <p align="center">
-  <img src="/img/get-started/installation/install-3.png" width="800"/>
+  <img src="/img/get-started/installation/install-3.png"/>
 </p>
 
 Click Install to begin the installation.
@@ -56,7 +56,7 @@ Click Install to begin the installation.
 Once the installation is finished, you will see the completion screen.
 
 <p align="center">
-  <img src="/img/get-started/installation/install-4.png" width="800"/>
+  <img src="/img/get-started/installation/install-4.png"/>
 </p>
 
 Click Finish to close the setup.

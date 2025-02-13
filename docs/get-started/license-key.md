@@ -18,13 +18,13 @@ Once you have obtained your license key, activate it by following these steps:
 Open [Your Software Name]. After the first installation, the software will be unlicensed. A window will pop up requesting a license key be entered.
 
 <p align="center">
-  <img src="/img/get-started/license-key/license-key-1.png" width="800"/>
+  <img src="/img/get-started/license-key/license-key-1.png" width="500"/>
 </p>
 
 Your license key will be in the format XXXX-XXXX-XXXX-XXXX. Enter it into the text box and activate the license.
 
 <p align="center">
-  <img src="/img/get-started/license-key/license-key-2.png" width="800"/>
+  <img src="/img/get-started/license-key/license-key-2.png" width="500"/>
 </p>
 
 If the key is valid, the 'OK' button will be enabled. Click OK to continue.
