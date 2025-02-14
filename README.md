@@ -20,6 +20,9 @@ These docs are built using [Docusaurus](https://docusaurus.io/), a modern static
   - [Installation](#installation)
   - [Running the Development Server](#running-the-development-server)
   - [Troubleshooting](#troubleshooting)
+- [Generating a PDF](#generating-the-pdf)
+  - [Installing docs-to-pdf](#installing-docs-to-pdf)
+  - [Generating the PDF](#generating-the-pdf)
 
 ## Documentation Issues
 If you come across any issues with the documentation or have a feature request related explicitly to it, create a new Jira Ticket and assign to the `Documentation` epic. Before creating a new ticket, check for existing issues to avoid duplication. 
