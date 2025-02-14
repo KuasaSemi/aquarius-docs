@@ -103,3 +103,36 @@ npm ci
 ```
 - Check for any missing dependencies or errors in the terminal output.
 - Restart the development server if changes are not reflecting.
+
+## Creating a PDF from the Docs site
+### Installing docs-to-pdf
+To create a pdf from the docs site we can use a free tool: [docs-to-pdf](https://github.com/jean-humann/docs-to-pdf?).
+
+To install this use the following command:
+```sh
+npm install -g docs-to-pdf
+```
+
+It may also be required to add any missing packages:
+```sh
+npm install -g fs-extra
+```
+
+To check `docs-to-pdf` has been installed correctly. Use:
+```sh
+docs-to-pdf --help
+```
+
+### Generating the PDF
+
+Run the site on your local host.
+
+```sh
+npx docusaurus start
+```
+
+Then run this command to generate the PDF.
+
+```sh
+npx docs-to-pdf --initialDocURLs="http://localhost:3000" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --pdfMargin="80,50,80,50" --coverTitle="Aquarius User Manual - Confidential do not distribute"
+```
