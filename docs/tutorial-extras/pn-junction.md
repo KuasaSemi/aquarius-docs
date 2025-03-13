@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# PN Junction
 
 Docusaurus can manage multiple versions of your docs.
 
-## Create a docs version
+## Overview
 
-Release a version 1.0 of your project:
+This simulation performs DC simulation of Si PN in 1D.
 
 ```bash
 npm run docusaurus docs:version 1.0
@@ -21,7 +21,7 @@ Your docs now have 2 versions:
 - `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
 - `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
 
-## Add a Version Dropdown
+## Defining the 1D PN Junction 
 
 To navigate seamlessly across versions, add a version dropdown.
 
