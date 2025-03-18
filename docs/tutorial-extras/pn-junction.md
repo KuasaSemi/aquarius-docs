@@ -10,19 +10,7 @@ Docusaurus can manage multiple versions of your docs.
 
 The Si PN junction is the basis for semiconductor devices like diodes, transistors, and solar cells by exhibiting key electrical properties, including the ability to allow current to flow in one direction (forward bias) and block current in the opposite direction (reverse bias). A PN junction fundamentally consisits of two regions of silicon: one with a p-type doping and the other with n-type doping. At the interface of the two regions, electrons diffuse from n-type side to p-type side and the holes from p-type to n-side. The results in the creation of charge free region having electric field which further opposes the carrier diffusion.  
 
-```bash
-npm run docusaurus docs:version 1.0
-```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
 ## Defining the PN Junction Structure 
-
 
 Open Aquarius software. To define a region, select the option of **Define**, then click on **Region** to select the shape of the region. In this example, rectangular region is selected by clicking on **Rectangle**.
 
