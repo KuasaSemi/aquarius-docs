@@ -11,14 +11,14 @@ Docusaurus can manage multiple versions of your docs.
 The Si PN junction is the basis for semiconductor devices like diodes, transistors, and solar cells by exhibiting key electrical properties, including the ability to allow current to flow in one direction (forward bias) and block current in the opposite direction (reverse bias). A PN junction fundamentally consisits of two regions of silicon: one with a p-type doping and the other with n-type doping. At the interface of the two regions, electrons diffuse from n-type side to p-type side and the holes from p-type to n-side. The results in the creation of charge free region having electric field which further opposes the carrier diffusion.  
 
 ## Defining the PN Junction Structure 
-
+### Define the geometry
 Open Aquarius software. To define a region, select the option of **Define**, then click on **Region** to select the shape of the region. In this example, rectangular region is selected by clicking on **Rectangle**.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image1.png"/>
 </p>
 
-Select the area where the p-type semiconductor will be by clicking at one corner and draging it. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
+Select the area where the p-type semiconductor will be by clicking at one corner and dragging it. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image2.png"/>
@@ -40,12 +40,14 @@ Similarly define the region and its properties for the n-type semiconductor as f
   <img src="/img/tutorial-extras/pn-junction/image5.png"/>
 </p>
 
+### Define the mesh parameters
+
 Define the grid points at which the solver will solve for electrostatics of the PN junction. Click on **Mesh** and select **Define Mesh Construction Grid**. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image6.png"/>
 </p>
-In the window that opens, click **Add** to define new gridlines. Select **Horizontal** orientation. Define the y-coordinates where the grid to be defined along with the **Spacing**. The spacing decides the fineness of the griding. As the spacing becomes smaller, the grid points become more dense. 
+In the window that opens, click **Add** to define new grid lines. Select **Horizontal** orientation. Define the y-coordinates where the grid to be defined along with the **Spacing**. The spacing decides the fineness of the grids. As the spacing becomes smaller, the grid points become more dense. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image7.png"/>
@@ -57,6 +59,8 @@ Variable grid spacing can be achieved by adding another set of vertical grid poi
   <img src="/img/tutorial-extras/pn-junction/image8.png"/>
 </p>
 
+### Define the contacts
+
 Ohmic contacts need to be defined on the p-side and n-side of the PN junction. These contacts are used for the application of voltage during DC bias. For this, click on **Define** and select **Contact**. 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image9.png"/>
@@ -67,7 +71,7 @@ Place the cursor on the boundary where the contact is to be defined.
   <img src="/img/tutorial-extras/pn-junction/image11.png"/>
 </p>
 
-Left click on the contact to define its propoerties like name, metal, type of contact, work function etc.
+Left click on the contact to define its properties like name, metal, type of contact, work function etc.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image12.png"/>
 </p>
@@ -84,7 +88,7 @@ Next, generate the mesh over the defined geometry. Click on **Mesh** and **Gener
   <img src="/img/tutorial-extras/pn-junction/image15.png"/>
 </p>
 
-Choose the desired mesh propoerties from the dialog box and click **OK**
+Choose the desired mesh properties from the dialogue box and click **OK**
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image16.png"/>
 </p>
@@ -102,6 +106,8 @@ The device structure after meshing looks like below. The meshed structure file s
 
 ## Simulating the PN Junction Structure 
 
+### Import the device structure
+
 Simulation of the defined PN junction can be performed using the circuit simulator in Aquarius. For this, navigate to the main menu and click on **New Simulation** button. A pop-up window opens asking to create a new **Solution File**. Click **OK**.  
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image20.png"/>
@@ -116,17 +122,19 @@ Select the .sdm of the PN Junction's structure saved in the previous session and
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image24.png"/>
 </p>
-Change the orientation of the device as per the requiremnts using **Control+R**
+Change the orientation of the device as per the requirements using **Control+R**
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image25.png"/>
 </p>
+
+### Define the voltage source
 
 Place the DC voltage source by clicking on the icon and dragging it to the desired location.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image27.png"/>
 </p>
 
-Connect the components using wires by simply joining the dots on the individial components. Use **Spacebar** to swap between the wire's orientation. 
+Connect the components using wires by simply joining the dots on the individual components. Use **Spacebar** to swap between the wire's orientation. 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image28.png"/>
 </p>
@@ -135,6 +143,7 @@ Introduce the reference voltage into the cirucit and connect it with a wire.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image31.png"/>
 </p>
+
 
 Introduce the bias values for the DC source by double clicking the DC source. Press **Add Value** and enter a desired voltage bias, say 0 V. 
 <p align="center">
@@ -153,7 +162,7 @@ Run the simulation using the blue play button which performs the steady-state si
 
 ## Visualising the result of simulation
 
-The results generated by applying the a constant bias in the previous session can be visualised using Aquarius's Visualiser. Open the Visualiser from the maub menu using **Open Results Visualiser** button. 
+The results generated by applying the a constant bias in the previous session can be visualised using Aquarius's Visualiser. Open the Visualiser from the main menu using **Open Results Visualiser** button. 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image35.png"/>
 </p>
@@ -169,7 +178,7 @@ Selecting the .res will open up the visualiser window as below. **Contour Plot**
   <img src="/img/tutorial-extras/pn-junction/image37.png"/>
 </p>
 
-Click on **Cut Line Plot** and select appropirate options. For example, device file (.sdm), the simulation file (.res), orientalation of the cut line, variable to be plotted etc. Click on **New Plot**. Shown below are the plots like new doping, energy band diagram etc.
+Click on **Cut Line Plot** and select appropriate options. For example, device file (.sdm), the simulation file (.res), orientation of the cut line, variable to be plotted etc. Click on **New Plot**. Shown below are the plots like new doping, energy band diagram etc.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image39.png"/>
