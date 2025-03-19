@@ -55,13 +55,17 @@ Open Aquarius software. To create a new device model directly without reference 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image6.png"/>
 </p>
-2. In the window that opens, click **Add** to define new grid lines. Select **Horizontal** orientation. Define the y-coordinates where the grid to be defined along with the **Spacing**. The spacing decides the fineness of the grids. As the spacing becomes smaller, the grid points become more dense. 
+2. In the window that opens, click **Add** to define new grid lines. Select **Horizontal** orientation. Define the y-coordinates where the grid to be defined along with the **Spacing**. The spacing decides the fineness of the grids. As the spacing becomes smaller, the grid points become more dense. In this example, a fixed interval grids from y=0.2 um to -0.2 um is defined with a spacing of 0.01 um. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image7.png"/>
 </p>
 
-3. Variable grid spacing can be achieved by adding another set of vertical grid points with different y-coordinates and spacing. Click **OK**. Please note that PN junction electrostatics can be solved in 1D. Hence vertical grid lines are not required in this example. 
+3. Variable grid spacing can be achieved by adding another set of vertical grid points with different y-coordinates and spacing. To do this, click on **Add** in the **Mesh Construction Window**. Then, enter a different Y1 and Y2 values. For example, in this case Y1=0.05 um and Y2=-0.05 um with spacing of 0.005 um. Click **OK**. Please note that PN junction electrostatics can be solved in 1D. Hence vertical grid lines are not required in this example. 
+
+<p align="center">
+  <img src="/img/tutorial-extras/pn-junction/image7_2.png"/>
+</p>
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image8.png"/>
