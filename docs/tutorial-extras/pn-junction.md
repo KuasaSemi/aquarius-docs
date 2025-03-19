@@ -110,7 +110,7 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image17.png"/>
 </p>
 
-8. The device structure after meshing looks like below. The meshed structure file should be saved as .sdm file. This completes the definition of device structure. 
+8. The device structure after meshing looks like below. The meshed structure file will be saved as .sdm file. This completes the definition of device structure. 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image19.png"/>
 </p>
