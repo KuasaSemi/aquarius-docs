@@ -26,14 +26,14 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image1.png"/>
 </p>
 
-3. Select the area where the p-type semiconductor will be by clicking at one corner and dragging it. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
+3. Select the area where the p-type semiconductor will be by clicking at one corner and dragging it. In this example we have defined a rectangle of width (along x axis) 0.1 um and length (along y axis) 0.2 um. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image2.png"/>
 </p>
 
 <p align="center">
-  <img src="/img/tutorial-extras/pn-junction/image3.png"/>
+  <img src="/img/tutorial-extras/pn-junction/image3_2.png"/>
 </p>
 
 4. To define the properties of the region, right click on the region and select **Properties**. Select the desired name, material, doping, etc. Click **OK**. 
