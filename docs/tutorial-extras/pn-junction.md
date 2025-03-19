@@ -204,7 +204,10 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image37.png"/>
 </p>
 
-4. Click on **Cut Line Plot** and select appropriate options. In this example, use the correct device file (.sdm), result file (.res), orientation of the cut line as vertical, variable to be plotted as Net Doping (Na-Nd) etc. Click on **New Plot**. Shown below are the plots for net doping, net charge density, electric field and energy band diagram in the same order. 
+4. Click on **Cut Line Plot** and select appropriate options. In this example, use the correct device file (.sdm), result file (.res), orientation of the cut line as vertical, variable to be plotted as Net Doping (Na-Nd) etc. Case number can be used to visualise the results at each bias points where the solver computes the results.
+
+Click on **New Plot**. Shown below are the plots for net doping, net charge density, electric field and energy band diagram in the same order. 
+
 The magnitude of net doping shows that doping concentration is the same on both p and n side of the junction. The reversal in sign shows that one is p-type and the other being n-type.
 
 <p align="center">
