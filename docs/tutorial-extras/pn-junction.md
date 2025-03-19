@@ -42,7 +42,7 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image4.png"/>
 </p>
 
-5. Similarly define the region and its properties for the n-type semiconductor as follows. In this example, the n-type region is defined with a rectangle of similar width (along x axis) of 0.1 um and length (along y axis) of 0.2 um as in p-type region. The p-type region is named Region2 and material is again Si with a uniform acceptor doping of 1e17 cm<sup>-3</sup>.
+5. Similarly define the region and its properties for the n-type semiconductor as follows. In this example, the n-type region is defined with a rectangle of similar width (along x axis) of 0.1 um and length (along y axis) of 0.2 um as in p-type region. The p-type region is named Region2 and material is again Si with a uniform acceptor doping of 1e17 cm<sup>-3</sup>. You may use different colours for p and n-type regions to make it easy to visualise.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image5.png"/>
