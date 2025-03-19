@@ -105,7 +105,7 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image16.png"/>
 </p>
 
-7. The results of the meshing process can be viewed as below.
+7. The results of the meshing process can be viewed as below. It shows the total number of meshing nodes on which the simulation will be performed. As the mesh density increases, the accuracy will increase. However, the time taken to simulate will also increase.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image17.png"/>
 </p>
