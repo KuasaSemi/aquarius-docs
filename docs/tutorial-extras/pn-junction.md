@@ -100,7 +100,7 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image15.png"/>
 </p>
 
-6. Choose the desired mesh properties from the dialogue box and click **OK**
+6. Choose the desired mesh properties from the dialogue box. This example uses the default value of 3 for **Number of Iterations** and Net Doping as the **Refinement Variable**. Doping is used for refining since there would be carrier depletion region at the interface of p-type and n-type needing better refinement at the interface. For better refinement, iterations can be increased at the cost of simulation time. Then click **OK**.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image16.png"/>
 </p>
