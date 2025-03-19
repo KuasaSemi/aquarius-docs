@@ -26,7 +26,7 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image1.png"/>
 </p>
 
-3. Select the area where the p-type semiconductor will be by clicking at one corner and dragging it. In this example we have defined a rectangle of width (along x axis) 0.1 um and length (along y axis) 0.2 um. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
+3. Select the area where the p-type semiconductor will be defined by clicking at one corner and dragging it. In this example we have defined a rectangle of width (along x axis) 0.1 um and length (along y axis) 0.2 um. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image2.png"/>
@@ -36,13 +36,13 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image3_2.png"/>
 </p>
 
-4. To define the properties of the region, right click on the region and select **Properties**. Select the desired name, material, doping, etc. Click **OK**. 
+4. To define the properties of the region, right click on the region and select **Properties**. Select the desired name, material, doping, etc. Click **OK**. In this example, the name is defined as Region1 and material is Si with a uniform acceptor doping of 1e17 cm<sup>-3</sup>.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image4.png"/>
 </p>
 
-5. Similarly define the region and its properties for the n-type semiconductor as follows.
+5. Similarly define the region and its properties for the n-type semiconductor as follows. In this example, the n-type region is defined with a rectangle of similar width (along x axis) of 0.1 um and length (along y axis) of 0.2 um as in p-type region. The p-type region is named Region2 and material is again Si with a uniform acceptor doping of 1e17 cm<sup>-3</sup>.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image5.png"/>
