@@ -137,7 +137,7 @@ You can turn off and turn on the meshing by clicking on **Mesh** and choosing **
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image22.png"/>
 </p>
-3. Select the .sdm of the PN Junction's structure saved in the previous session and click **OK**.
+3. When you drop the device onto the circuit editor, the device properties will automatically appear. First you need to click "Get .sdm File". This will open a file explorer window and from here select the sdm file for the device you created previously.In this example, the **Device1.sdm**. Click **OK**.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image24.png"/>
 </p>
