@@ -150,12 +150,13 @@ Associated device properties can be modified by **double clicking** on the icon.
 
 ### Define the voltage source
 
-1. Place the DC voltage source by clicking on the icon and dragging it to the desired location.
+1. Place the DC voltage source by clicking and holding on the icon.  Drag it to the desired location.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image27.png"/>
 </p>
 
-2. Connect the components using wires by simply joining the dots on the individual components. Use **Spacebar** to swap between the wire's orientation. 
+2. Connect the components using wires. To connect by wires, hover over one of the white circular component contacts, at which point the cursor will change to a cross and then left click to connect the contact. Use **Spacebar** to swap between the wire's orientation. 
+
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image28.png"/>
 </p>
