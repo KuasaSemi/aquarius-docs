@@ -179,6 +179,10 @@ Associated device properties can be modified by **double clicking** on the icon.
 
 6. Run the simulation using the blue play button which performs the steady-state simulations. The log of the simulation can be viewed in the window that opens. Close the window and **save** it. This simulation has created the .res file for visualization which is done in the next session. 
 <p align="center">
+  <img src="/img/tutorial-extras/pn-junction/image48.png"/>
+</p>
+
+<p align="center">
   <img src="/img/tutorial-extras/pn-junction/image34.png"/>
 </p>
 
