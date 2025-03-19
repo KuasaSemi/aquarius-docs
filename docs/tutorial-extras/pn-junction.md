@@ -110,11 +110,18 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image17.png"/>
 </p>
 
-8. The device structure after meshing looks like below. The meshed structure file will be saved as .sdm file. This completes the definition of device structure. 
+8. The device structure after meshing looks like below. The meshed structure file will be saved as .sdm file. This completes the definition of device structure.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image19.png"/>
 </p>
 
+You can turn off and turn on the meshing by clicking on **Mesh** and choosing **exit mesh** and **view mesh** respectively.
+<p align="center">
+  <img src="/img/tutorial-extras/pn-junction/image19_1.png"/>
+</p>
+<p align="center">
+  <img src="/img/tutorial-extras/pn-junction/image19_2.png"/>
+</p>
 
 ## Simulating the PN Junction Structure 
 
