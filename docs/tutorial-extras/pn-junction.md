@@ -61,7 +61,7 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image7.png"/>
 </p>
 
-3. Variable grid spacing can be achieved by adding another set of vertical grid points with different y-coordinates and spacing. To do this, click on **Add** in the **Mesh Construction Window**. Then, enter a different Y1 and Y2 values. For example, in this case Y1=0.05 um and Y2=-0.05 um with spacing of 0.005 um. Click **OK**. Please note that PN junction electrostatics can be solved in 1D. Hence vertical grid lines are not required in this example. 
+3. Variable grid spacing can be achieved by adding another set of vertical grid points with different y-coordinates and spacing. To do this, click on **Add** in the **Mesh Construction Window**. Then, enter a different Y1 and Y2 values. For example, in this case Y1=0.05 um and Y2=-0.05 um with spacing of 0.005 um. Click **OK** and then close the **Mesh Construction Window**. Please note that PN junction electrostatics can be solved in 1D. Hence vertical grid lines are not required in this example. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image7_2.png"/>
