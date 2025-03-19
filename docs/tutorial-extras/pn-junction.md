@@ -132,7 +132,7 @@ You can turn off and turn on the meshing by clicking on **Mesh** and choosing **
   <img src="/img/tutorial-extras/pn-junction/image20.png"/>
 </p>
 
-2. The window for simulating the structure opens up. Here, the circuit can be constructed to be externally applied to the defined PN Junction. To select the previously defined structure of PN Junction, click the **device** icon and drag it into the workspace.
+2. The window for simulating the structure opens up. Here, the circuit can be constructed to externally apply bias to the defined PN Junction. To select the previously defined structure of PN Junction, **click and hold** the **device** icon. Then drag it into the workspace.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image22.png"/>
