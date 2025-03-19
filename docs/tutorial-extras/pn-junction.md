@@ -83,12 +83,12 @@ Open Aquarius software. To create a new device model directly without reference 
   <img src="/img/tutorial-extras/pn-junction/image11.png"/>
 </p>
 
-3. Left click on the contact to define its properties like name, metal, type of contact, work function etc.
+3. Left click on the contact to define its properties like name, metal, type of contact, work function etc. In this example, we have named the Anode contact which contacts p-type region as **Top** and cathode contact contacting n-type region as **Bottom**. The type of both contacts are Ohmic with work function of 4.1 eV corresponding to that of Aluminium.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image12.png"/>
 </p>
 
-4. Similarly, add the bottom contact.
+4. Similarly, add the bottom contact. The contacts can be edited by left clicking on it to select it and then right click on it and select properties.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image14.png"/>
