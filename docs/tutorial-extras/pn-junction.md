@@ -12,13 +12,21 @@ The Si PN junction is the basis for semiconductor devices like diodes, transisto
 
 ## Defining the PN Junction Structure 
 ### Define the geometry
-1. Open Aquarius software. To define a region, select the option of **Define**, then click on **Region** to select the shape of the region. In this example, rectangular region is selected by clicking on **Rectangle**.
+
+Open Aquarius software. To create a new device model directly without reference to process model data:
+1. From the Main Window, Select New Device Model.
+
+<p align="center">
+  <img src="/img/new_device_model.png" alt="Centered Image" width="800"/>
+</p>
+
+2.  Click on **New Device Model**. To define a region, select the option of **Define**, then click on **Region** to select the shape of the region. In this example, rectangular region is selected by clicking on **Rectangle**.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image1.png"/>
 </p>
 
-2. Select the area where the p-type semiconductor will be by clicking at one corner and dragging it. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
+3. Select the area where the p-type semiconductor will be by clicking at one corner and dragging it. You can specify the exact coordinates of the corners using the pop-up box that follows. Click **OK**.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image2.png"/>
@@ -28,13 +36,13 @@ The Si PN junction is the basis for semiconductor devices like diodes, transisto
   <img src="/img/tutorial-extras/pn-junction/image3.png"/>
 </p>
 
-3. To define the properties of the region, right click on the region and select **Properties**. Select the desired name, material, doping, etc. Click **OK**. 
+4. To define the properties of the region, right click on the region and select **Properties**. Select the desired name, material, doping, etc. Click **OK**. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image4.png"/>
 </p>
 
-4. Similarly define the region and its properties for the n-type semiconductor as follows.
+5. Similarly define the region and its properties for the n-type semiconductor as follows.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image5.png"/>
