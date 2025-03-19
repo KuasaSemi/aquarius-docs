@@ -161,7 +161,7 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image28.png"/>
 </p>
 
-3. Introduce the reference voltage into the cirucit and connect it with a wire.
+3. Ground is used as the reference voltage> This placed by click and hols followed by dragging into the circuit. connect it with a wire.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image31.png"/>
 </p>
