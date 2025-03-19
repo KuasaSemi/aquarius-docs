@@ -143,7 +143,7 @@ Associated device properties can be modified by **double clicking** on the icon.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image24.png"/>
 </p>
-4. Change the orientation of the device as per the requirements using **Control+R**
+4. To change the orientation of the device, first left click the device icon to select it and then using **Control+R** to rotate by 90 degree each time.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image25.png"/>
 </p>
