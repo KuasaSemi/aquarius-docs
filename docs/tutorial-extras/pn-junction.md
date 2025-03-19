@@ -204,7 +204,7 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image37.png"/>
 </p>
 
-4. Click on **Cut Line Plot** and select appropriate options. In this example, use the correct device file (.sdm), circuit file (.res), orientation of the cut line as vertical, variable to be plotted as Net Doping (Na-Nd) etc. Click on **New Plot**. Shown below are the plots like new doping, energy band diagram etc.
+4. Click on **Cut Line Plot** and select appropriate options. In this example, use the correct device file (.sdm), result file (.res), orientation of the cut line as vertical, variable to be plotted as Net Doping (Na-Nd) etc. Click on **New Plot**. Shown below are the plots like new doping, energy band diagram etc.
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image39.png"/>
