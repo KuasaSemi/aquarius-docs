@@ -172,7 +172,7 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image33.png"/>
 </p>
 
-5. Save the circuit with .sol extension. Press **OK**
+5. Save the circuit with .sol extension. Ensure it is in the same folders as .sdm file. Then press **OK**
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image32.png"/>
 </p>
