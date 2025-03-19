@@ -204,21 +204,29 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image37.png"/>
 </p>
 
-4. Click on **Cut Line Plot** and select appropriate options. In this example, use the correct device file (.sdm), result file (.res), orientation of the cut line as vertical, variable to be plotted as Net Doping (Na-Nd) etc. Click on **New Plot**. Shown below are the plots like new doping, energy band diagram etc.
+4. Click on **Cut Line Plot** and select appropriate options. In this example, use the correct device file (.sdm), result file (.res), orientation of the cut line as vertical, variable to be plotted as Net Doping (Na-Nd) etc. Click on **New Plot**. Shown below are the plots for net doping, net charge density, electric field and energy band diagram in the same order. 
+The magnitude of net doping shows that doping concentration is the same on both p and n side of the junction. The reversal in sign shows that one is p-type and the other being n-type.
 
 <p align="center">
-  <img src="/img/tutorial-extras/pn-junction/image39.png"/>
-</p>
-<p align="center">
-  <img src="/img/tutorial-extras/pn-junction/image40.png"/>
+  <img src="/img/tutorial-extras/pn-junction/image39_2.png"/>
 </p>
 
-<p align="center">
-  <img src="/img/tutorial-extras/pn-junction/image41.png"/>
-</p>
+The net charge shows that there is a depletion of carriers at the interface. The electrons would diffuse from n-side to p-side resulting in net positive charge. While the holes in p-side would diffuse into n-side resulting in net negative charge. 
 
 <p align="center">
-  <img src="/img/tutorial-extras/pn-junction/image42.png"/>
+  <img src="/img/tutorial-extras/pn-junction/image41_2.png"/>
+</p>
+
+The electric field shows a peak at the interface. This peak value corresponds to the maximum electric field present in the device.
+
+<p align="center">
+  <img src="/img/tutorial-extras/pn-junction/image40_2.png"/>
+</p>
+
+The typical band diagram is shown below.
+
+<p align="center">
+  <img src="/img/tutorial-extras/pn-junction/image42_2.png"/>
 </p>
 
 
