@@ -8,7 +8,7 @@ Docusaurus can manage multiple versions of your docs.
 
 ## Overview
 
-The Si PN junction is the basis for semiconductor devices like diodes, transistors, and solar cells by exhibiting key electrical properties, including the ability to allow current to flow in one direction (forward bias) and block current in the opposite direction (reverse bias). A PN junction fundamentally consisits of two regions of silicon: one with a p-type doping and the other with n-type doping. At the interface of the two regions, electrons diffuse from n-type side to p-type side and the holes from p-type to n-side. The results in the creation of charge free region having electric field which further opposes the carrier diffusion.  
+The Si PN junction is the basis for semiconductor devices like diodes, transistors, and solar cells. The PN junction exhibits key electrical properties, including the ability to allow current to flow in one direction (forward bias) and block current in the opposite direction (reverse bias). A PN junction fundamentally consists of two regions of silicon: one with a p-type doping and the other with n-type doping. At the interface of the two regions, electrons diffuse from the n-type side to the p-type side and holes from the p-type side to the n-type side. This results in the creation of a charge-free region having an electric field which further opposes the carrier diffusion.
 
 ## Defining the PN Junction Structure 
 ### Define the geometry
