@@ -167,7 +167,7 @@ Associated device properties can be modified by **double clicking** on the icon.
 </p>
 
 
-4. Introduce the bias values for the DC source by double clicking the DC source. Press **Add Value** and enter a desired voltage bias, say 0 V. 
+4. Introduce the bias values for the DC source by double clicking the DC source. Press **Add Value** and enter a desired voltage bias. Here, we are using 0 V to study the equilibrium condition. The effect of biasing will studied later. 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image33.png"/>
 </p>
