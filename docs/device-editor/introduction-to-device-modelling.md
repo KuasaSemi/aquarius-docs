@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction to Device Modelling
+# Introduction
 
 The definition of a physical device model consists of several steps. This includes the definition of the geometry, doping and physical properties of the device, as well as the finite element mesh used in the analysis and the models employed to simulate the device. The geometry, doping profile and meshing of a device may be (*imported from a fabrication process simulation - coming soon*) or defined directly without reference to a process model.
 

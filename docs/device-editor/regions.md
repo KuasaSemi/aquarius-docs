@@ -12,19 +12,19 @@ To define a region:
 1. From the Menu, select Define -> Region and select the type of geometry you would like to define (Rectangle, Polygon etc.).
 
 <p align="center">
-  <img src="/img/regions/01.png" alt="Centered Image" width="800"/>
+  <img src="/img/regions/01.png" width="800"/>
 </p>
 
 2. Use your cursor and mouse buttons to define the region shape. Or if importing geometry from a .csv file, select the file you want to use.
 
 <p align="center">
-  <img src="/img/regions/02.png" alt="Centered Image" width="800"/>
+  <img src="/img/regions/02.png" width="800"/>
 </p>
 
 3. Once the region's shape has been defined the region properties dialog box will appear.  Use this dialog to set the region's properties.
 
 <p align="center">
-  <img src="/img/regions/03.png" alt="Centered Image" width="800"/>
+  <img src="/img/regions/03.png" width="800"/>
 </p>
 
 ## Parameters
@@ -53,7 +53,7 @@ The properties of these materials can be fully customised by the user during set
 
 </div>
 
-### Composition (Coming soon)
+### Composition
 After a region has been defined, the user can specify a constant compositional profile over the region. The mole fraction X for a ternary compound and both X and Y mole fractions for quaternary materials can be specified. This command sets a constant values in a specified region.
 
 <div class="properties-table">
@@ -62,7 +62,7 @@ After a region has been defined, the user can specify a constant compositional p
 |-------------------|---------------------------------------------------------------|------------|
 | `Mole Fraction X` | Used define the mole fraction X. Value range between 0 and 1. | -          |
 | `Mole Fraction Y` | Used define the mole fraction Y. Value range between 0 and 1. | -          |
-| `Force All Edges to Specified Composition` | Forces all the edges of a defined region to have the compositions defined by  mole-fraction parameters. | -  |
+| `Force All Edges to Specified Composition` | Forces all the edges of a defined region to have the compositions defined by  mole-fraction parameters. Options: [True, False] | -  |
 
 </div>
 
@@ -81,7 +81,7 @@ Each point has two parameters.
 
 | Name        | Description                       | Unit       |
 |-------------|-----------------------------------|------------|
-| `X`         | Used to define the X coordinate.  | -          |
-| `Y`         | Used to define the Y coordinate.  | -          |
+| `X`         | Used to define the X coordinate.  | Microns    |
+| `Y`         | Used to define the Y coordinate.  | Microns    |
 
 </div>

@@ -5,15 +5,28 @@ sidebar_position: 4
 # Contacts
 
 ## Overview
-Electrical and/or thermal contacts can be assigned to any edge—or combination of edges—along the perimeter of a region. A single contact may span multiple edges, and contacts can also be distributed across different regions, including junctions between regions. To successfully simulate a device, at least two contacts must be defined. A maximum of eight contacts can be added to a single device model.
+Electrical, thermal and electrothermal contacts can be assigned to any edge—or combination of edges—along the perimeter of a region. A single contact may span multiple edges, and contacts can also be distributed across different regions, including junctions between regions. To successfully simulate a device, at least two contacts must be defined. A maximum of eight contacts can be added to a single device model.
 
 ## Usage Instructions
 
 To define a contact:
 1. From the Menu, select Define -> Contact.
-2. Using the cursor, hover the cursor over the geometric edges that make up the contact.
-3. When the edge is highlighted in green and the cursor changes to indicate a selectable element, left-click to select the edge.
-4. After defining all the contact edges, right-click anywhere to open the properties dialog for the contact.  Use this dialog to set the contact's properties.
+
+<p align="center">
+  <img src="/img/contacts/01.png" width="800"/>
+</p>
+
+2. Using the cursor, hover the cursor over the geometric edges that make up the contact. When the edge is highlighted in green and the cursor changes to indicate a selectable element, left-click to select the edge.
+
+<p align="center">
+  <img src="/img/contacts/02.png" width="800"/>
+</p>
+
+3. After defining all the contact edges, right-click anywhere to open the properties dialog for the contact.  Use this dialog to set the contact's properties.
+
+<p align="center">
+  <img src="/img/contacts/03.png" width="800"/>
+</p>
 
 ## Parameters
 
