@@ -13,19 +13,19 @@ To define a contact:
 1. From the Menu, select Define -> Contact.
 
 <p align="center">
-  <img src="/img/contacts/01.png" width="800"/>
+  <img src="/img/device-editor/contacts/01.png" width="800"/>
 </p>
 
 2. Using the cursor, hover the cursor over the geometric edges that make up the contact. When the edge is highlighted in green and the cursor changes to indicate a selectable element, left-click to select the edge.
 
 <p align="center">
-  <img src="/img/contacts/02.png" width="800"/>
+  <img src="/img/device-editor/contacts/02.png" width="800"/>
 </p>
 
 3. After defining all the contact edges, right-click anywhere to open the properties dialog for the contact.  Use this dialog to set the contact's properties.
 
 <p align="center">
-  <img src="/img/contacts/03.png" width="800"/>
+  <img src="/img/device-editor/contacts/03.png" />
 </p>
 
 ## Parameters

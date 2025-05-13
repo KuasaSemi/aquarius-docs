@@ -8,9 +8,9 @@ To edit or view the physical models properties:
 1. From the main menu, select Model -> Model Selection.
 
 <p align="center">
-  <img src="/img/physical-models/physical-models-1.png" width="300"/>
-  <img src="/img/physical-models/physical-models-2.png" width="300"/>
-  <img src="/img/physical-models/physical-models-3.png" width="300"/>
+  <img src="/img/device-editor/physical-models/01.png" width="300"/>
+  <img src="/img/device-editor/physical-models/02.png" width="300"/>
+  <img src="/img/device-editor/physical-models/03.png" width="300"/>
 </p>
 
 ## Parameters

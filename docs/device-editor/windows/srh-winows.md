@@ -13,11 +13,20 @@ To define an SRH window:
 1. From the Menu, select Define -> Window -> Shockley-Read-Hall.
 
 <p align="center">
-  <img src="/img/windows/srh/01.png" width="800"/>
+  <img src="/img/device-editor/windows/srh/01.png" width="800"/>
 </p>
 
 2. Use your cursor and mouse buttons to define a rectangular doping window.
+
+<p align="center">
+  <img src="/img/device-editor/windows/srh/02.png" width="800"/>
+</p>
+
 3. Once the window's shape has been defined the SRH window's properties dialog box will appear.  Use this dialog to set the window's properties.
+
+<p align="center">
+  <img src="/img/device-editor/windows/srh/03.png" width="400"/>
+</p>
 
 ## Parameters
 

@@ -13,15 +13,19 @@ To define a doping window:
 1. From the Menu, select Define -> Window -> Doping.
 
 <p align="center">
-  <img src="/img/windows/doping/01.png" width="800"/>
+  <img src="/img/device-editor/windows/doping/01.png" width="800"/>
 </p>
 
 2. Use your cursor and mouse buttons to define a rectangular doping window.
 
+<p align="center">
+  <img src="/img/device-editor/windows/doping/02.png" width="800"/>
+</p>
+
 3. Once the window's shape has been defined the doping window's properties dialog box will appear.  Use this dialog to set the window's properties.
 
 <p align="center">
-  <img src="/img/windows/doping/02.png" width="800"/>
+  <img src="/img/device-editor/windows/doping/03.png" width="800"/>
 </p>
 
 ## Parameters

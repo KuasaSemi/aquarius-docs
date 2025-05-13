@@ -13,12 +13,26 @@ The process begins with the definition of a grid, where the user specifies horiz
 
 To define a rectangular meshing grid:
 
-1. From the Menu, select Mesh -> Define Mesh Construction Grid. This will open a dialog box.
-1. Click the `Add` button to create a new group of grid lines.
-1. In the dialog box, define the properties of the grid line group.
-1. Specify the rectangular area using X and Y coordinates, for example, (0,0) to (5,5).
-1. Set the spacing between the grid lines.
-1. Click `OK` to generate the collection of grid lines over the defined area.
+1. From the Menu, select Mesh -> Define Mesh Construction Grid. This will open a properties dialog.
+
+<p align="center">
+  <img src="/img/device-editor/finite-element-mesh/meshing-grid/01.png" width="800"/>
+</p>
+
+2. Click the `Add` button to create a new group of grid lines.
+
+<p align="center">
+  <img src="/img/device-editor/finite-element-mesh/meshing-grid/02.png" width="800"/>
+</p>
+
+3. In the dialog box, define the properties of the grid line group.
+4. Specify the rectangular area using X and Y coordinates, for example, (0,0) to (5,5).
+5. Set the spacing between the grid lines.
+6. Click `OK` to generate the collection of grid lines over the defined area.
+
+<p align="center">
+  <img src="/img/device-editor/finite-element-mesh/meshing-grid/03.png" width="800"/>
+</p>
 
 Repeat this process for both the horizontal (X) and vertical (Y) directions until a suitable meshing grid of intersecting lines is achieved.
 

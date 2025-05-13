@@ -9,9 +9,23 @@ Once the initial meshing grid has been defined, this command will generate the n
 
 ## Usage Instructions
 To generate a finite element model:
-1. From the Menu, select Mesh -> Generate Finite Element Mesh Model. This will open the Mesh Properties dialog.
-1. If automatic mesh refinement is required, enable the Mesh Refinement Options checkbox. By default, this option is disabled. When enabled, you can adjust the mesh refinement settings as needed.
-1. Once you are satisfied with the settings, click `OK` to generate the mesh.
+1. From the Menu, select Mesh -> Generate Finite Element Mesh Model. This will open the mesh properties dialog.
+
+<p align="center">
+  <img src="/img/device-editor/finite-element-mesh/mesh-generation/01.png" width="800"/>
+</p>
+
+2. If automatic mesh refinement is required, enable the Mesh Refinement Options checkbox. By default, this option is disabled. When enabled, you can adjust the mesh refinement settings as needed.
+
+<p align="center">
+  <img src="/img/device-editor/finite-element-mesh/mesh-generation/02.png" width="600"/>
+</p>
+
+3. Once you are satisfied with the settings, click `OK` to generate the mesh.
+
+<p align="center">
+  <img src="/img/device-editor/finite-element-mesh/mesh-generation/03.png" width="800"/>
+</p>
 
 Before creating a finite element device model, it is important to ensure that at least one region is defined and a suitable meshing grid has been specified.
 
