@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Physical Models
@@ -10,7 +10,7 @@ To edit or view the physical models properties:
 <p align="center">
   <img src="/img/physical-models/physical-models-1.png" width="300"/>
   <img src="/img/physical-models/physical-models-2.png" width="300"/>
-  <img src="/img/physical-models/physical-models-3.png"width="300"/>
+  <img src="/img/physical-models/physical-models-3.png" width="300"/>
 </p>
 
 ## Parameters

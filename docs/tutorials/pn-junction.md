@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # PN Junction
 
-Docusaurus can manage multiple versions of your docs.
-
 ## Overview
 
 The Si PN junction is the basis for semiconductor devices like diodes, transistors, and solar cells. The PN junction exhibits key electrical properties, including the ability to allow current to flow in one direction (forward bias) and block current in the opposite direction (reverse bias). A PN junction fundamentally consists of two regions of silicon: one with a p-type doping and the other with n-type doping. At the interface of the two regions, electrons diffuse from the n-type side to the p-type side and holes from the p-type side to the n-type side. This results in the creation of a charge-free region having an electric field which further opposes the carrier diffusion.
@@ -198,7 +196,7 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image36.png"/>
 </p>
 
-3. Selecting the .res will open up the visualiser window as below. **Contour Plot** and **Cut Line Plot** are used to visualise the device's intrinsic material paramters. The **External Plot** helps to visualise the response to the external sources like I-V and C-V. 
+3. Selecting the .res will open up the visualiser window as below. **Contour Plot** and **Cut Line Plot** are used to visualise the device's intrinsic material parameters. The **External Plot** helps to visualise the response to the external sources like I-V and C-V. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image37.png"/>
@@ -282,7 +280,7 @@ The typical band diagram is shown below.
   <img src="/img/tutorial-extras/pn-junction/image52.png"/>
 </p>
 
-6. Select the desired variable in the X and Y axes with the appropriate graph setings like log scale etc. Press **New Plot**. This will show the I-V characteristics of the defined PN junction.
+6. Select the desired variable in the X and Y axes with the appropriate graph settings like log scale etc. Press **New Plot**. This will show the I-V characteristics of the defined PN junction.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image53.png"/>
 </p>

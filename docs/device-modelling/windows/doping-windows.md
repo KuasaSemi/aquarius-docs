@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 # Doping Windows
@@ -17,24 +17,26 @@ To define a doping window:
 
 2. Use your cursor and mouse buttons to define a rectangular doping window.
 
-3. Once the windows shape has been defined the doping windows properties dialog box will appear.  Use this dialog to set the region's properties.
+3. Once the window's shape has been defined the doping window's properties dialog box will appear.  Use this dialog to set the window's properties.
 
 <p align="center">
   <img src="/img/doping-window/doping-window-properties.png" alt="Centered Image" width="800"/>
 </p>
 
-## Doping Window Properties
+## Parameters
 ### General
 
+<div class="properties-table">
 
 | Name        | Description                                                 | Unit       |
 |-------------|-------------------------------------------------------------|------------|
 | `Name`     | A unique identifier for the window.                      | -          |
 | `Colour`     | Used to define visual colour of the region (Not used in the solver). | -          |
 | `Edge Symmetry` | Used to select the shape of the diffusion. Options: [Normal, Left Symmetric, Right Symmetric or Double Symmetric] | -          |
-| `Directrion` | Used to select the direction of the implant. Options: [Upwards, Downwards, Both] | -          |
+| `Direction` | Used to select the direction of the implant. Options: [Upwards, Downwards, Both] | -          |
 | `Doping` | Used to specify the type of doping implant. Options: [Donor, Acceptor] | -          |
 
+</div>
 
 Available materials include Si, SiC, Oxide, Air (more coming soon). The properties of these materials can be fully customised by the user during setup of the device model. There are two general types of semiconductor can be defined, namely:  
 - Single Composition (e.g. Si, GaAs, SiC)
