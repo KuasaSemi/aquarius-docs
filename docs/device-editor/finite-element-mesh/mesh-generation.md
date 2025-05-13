@@ -8,6 +8,8 @@ sidebar_position: 2
 Once the initial meshing grid has been defined, this command will generate the nodes at the intersections of those lines and triangulate them to form the finite element mesh. The Delaunay algorithm is used and additional checks are made to ensure optimal triangle shapes, reducing narrow or poorly shaped elements that can impact simulation accuracy.
 
 ## Usage Instructions
+Before creating a finite element device model, it is important to ensure that at least one region is defined and a suitable meshing grid has been specified.
+
 To generate a finite element model:
 1. From the Menu, select Mesh -> Generate Finite Element Mesh Model. This will open the mesh properties dialog.
 
@@ -23,13 +25,11 @@ To generate a finite element model:
 
 3. Once you are satisfied with the settings, click `OK` to generate the mesh.
 
+4. Depending on the complexity of the device model and the meshing grid, the generation process may take some time. The progress of the mesh generation will be displayed in the status window in the centre of the screen. Once complete, the finished FE model will be displayed. The P and N regions of the device will also be plotted, highlighting the position of the metallurgical junction, which is the point where the net doping concentration is zero Atoms/cm³.
+
 <p align="center">
   <img src="/img/device-editor/finite-element-mesh/mesh-generation/03.png" width="800"/>
 </p>
-
-Before creating a finite element device model, it is important to ensure that at least one region is defined and a suitable meshing grid has been specified.
-
-Depending on the complexity of the device model and the meshing grid, the generation process may take some time. The progress of the mesh generation will be displayed in the status window in the centre of the screen. Once complete, the finished FE model will be displayed. The P and N regions of the device will also be plotted, highlighting the position of the metallurgical junction, which is the point where the net doping concentration is zero Atoms/cm³.
 
 ## Mesh Refinement Parameters
 
