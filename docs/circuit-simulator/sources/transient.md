@@ -2,53 +2,73 @@
 title: "Transient"
 sidebar_position: 2
 ---
-
-# Shockley-Read-Hall Windows
-
+# Transient Sources
 ## Overview
-Shockley-Read-Hall (SRH) windows allow the user to define a rectangular region where the default carrier lifetimes for SRH recombination can be adjusted. Within this window, the carrier lifetimes are scaled by a constant factor, providing precise control over the recombination dynamics in specific regions of the device.
+Used when performing a time-dependent simulation. These components provide time-varying current or voltage sources that drive a circuit with a defined waveform over time. They are ideal sources, meaning their output is defined entirely by the specified waveform, regardless of the connected load.
 
-## Usage Instructions
-To define an SRH window:
-1. From the Menu, select Define -> Window -> Shockley-Read-Hall.
+There are four types of transient waveforms namely:
 
-<p align="center">
-  <img src="/img/device-editor/windows/srh/01.png" width="800"/>
-</p>
+1. Piecewise Linear (PWL) Waveform.
+    - Allows the definition of custom, non-periodic waveforms by specifying a series of time-value pairs, creating a piecewise linear signal. This is useful for complex waveforms that cannot be captured by simple sine, triangle, or square waves.
+1. Sine Wave.
+    - Generates a sinusoidal current or voltage signal, characterized by its amplitude, frequency, and phase.
+1. Triangle Wave.
+    - Generates a linear, periodic triangular waveform, defined by its peak values and period.
+1. Rectangle Wave.
+    - Generates a square wave with programmable high and low states, as well as on/off times.
 
-2. Use your cursor and mouse buttons to define a rectangular doping window.
-
-<p align="center">
-  <img src="/img/device-editor/windows/srh/02.png" width="800"/>
-</p>
-
-3. Once the window's shape has been defined the SRH window's properties dialog box will appear.  Use this dialog to set the window's properties.
-
-<p align="center">
-  <img src="/img/device-editor/windows/srh/03.png" width="400"/>
-</p>
+:::tip
+For instructions on adding a component to the simulation circuit, click [here](../introduction#how-to-add-a-component).
+:::
 
 ## Parameters
-
-### General
+### PWL
 <div class="properties-table">
 
-| Name                                | Description                                                               | Unit       |
-|-------------------------------------|---------------------------------------------------------------------------|------------|
-| `Name`                              | A unique identifier for the window.                                       | -          |
-| `Colour`                            | Used to define visual colour of the window (Not used in the solver).      | -          |
-| `Scale Factor for Carrier Lifetime` | Multiplies the default carrier lifetimes within the window by this value. | -          |
+| Name               | Description                                                                    | Unit       |
+|--------------------|--------------------------------------------------------------------------------|------------|
+| `Times`            | A list of time points defining the waveform.                                   | seconds    |
+| `Values`           | A list of corresponding voltage or current values at each specified time point.| V or A     |
+| `Number of Cycles` | The total number of cycles of the waveform the source outputs before stopping. | -          |
 
 </div>
 
-### Geometry
+### Rectangle
 <div class="properties-table">
 
-| Name    | Description                                                     | Unit    |
-|---------|-----------------------------------------------------------------|---------|
-| `Top`   | The y-coordinate of the top edge of the SRH window.             | Microns |
-| `Depth` | The vertical distance from the top to the bottom of the window. | Microns |
-| `Left`  | The x-coordinate of the left edge of the SRH window.            | Microns |
-| `Right` | The x-coordinate of the right edge of the SRH window.           | Microns |
+| Name                  | Description                                                                                 | Unit    |
+|-----------------------|---------------------------------------------------------------------------------------------|---------|
+| `Min Voltage/Current` | The lower level of the rectangular waveform.                                                | V or A  |
+| `Max Voltage/Current` | The upper level of the rectangular waveform.                                                | V or A  |
+| `Frequency`           | The number of cycles the waveform completes per second.                                     | Hz      |
+| `Theta1`              | The phase angle at which the waveform begins rising from the minimum to the maximum value.  | Degrees |
+| `Theta2`              | The phase angle at which the waveform reaches its maximum value.                            | Degrees |
+| `Theta3`              | The phase angle at which the waveform begins falling from the maximum to the minimum value. | Degrees |
+| `Theta4`              | The phase angle at which the waveform returns to its minimum value.                         | Degrees |
+| `Number of Cycles`    | The total number of cycles of the waveform the source outputs before stopping.              | -       |
+
+</div>
+
+### Sine
+<div class="properties-table">
+
+| Name                  | Description                                                                            | Unit    |
+|-----------------------|----------------------------------------------------------------------------------------|---------|
+| `Max Voltage/Current` | The peak amplitude of the sine waveform.                                               | V or A  |
+| `Frequency`           | The number of cycles the waveform completes per second.                                | Hz      |
+| `Theta`               | The phase angle that determines the initial position of the waveform within its cycle. | Degrees |
+| `DC Component`        | A constant offset added to the entire waveform, shifting it vertically.                | V or A  | 
+
+</div>
+
+### Triangular
+<div class="properties-table">
+
+| Name                  | Description                                                                    | Unit    |
+|-----------------------|--------------------------------------------------------------------------------|---------|
+| `Min Voltage/Current` | The lower level of the triangular waveform.                                    | V or A  |
+| `Max Voltage/Current` | The upper level of the triangular waveform.                                    | V or A  |
+| `Frequency`           | The number of cycles the waveform completes per second.                        | Hz      |
+| `Theta Start`         | The phase angle that determines the initial point within the waveform's cycle. | Degrees |
 
 </div>

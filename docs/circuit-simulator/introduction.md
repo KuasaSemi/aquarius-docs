@@ -1,20 +1,29 @@
 ---
+title: "Introduction"
 sidebar_position: 1
 ---
 
-# Introduction
+## Overview
 
-The definition of a physical device model consists of several steps. This includes the definition of the geometry, doping and physical properties of the device, as well as the finite element mesh used in the analysis and the models employed to simulate the device. The geometry, doping profile and meshing of a device may be (*imported from a fabrication process simulation - coming soon*) or defined directly without reference to a process model.
+Add some text here...
 
-To create a new device model directly without reference to process model data:
-1. From the Main Window, Select New Device Model.
+## Adding a Component to the Simulation Circuit
 
-<p align="center">
-  <img src="/img/new_device_model.png" alt="Centered Image" width="800"/>
-</p>
+To add a resistor to the circuit:
 
-2. When prompted *Do you want to create a new Device Model (.sdm) file?*, click OK.
+1. Click the desired component icon in the Component toolbar.
 
 <p align="center">
-  <img src="/img/do_you_want_to_create_new_device_model.png" alt="Centered Image" width="400"/>
+  <img src="/img/circuit-simulator/components/resistor/01.png" />
 </p>
+
+2. While holding down the left mouse button, drag the resistor to the desired location on the canvas.  
+3. Release the mouse button to place the component.
+
+<p align="center">
+  <img src="/img/circuit-simulator/components/resistor/02.png" />
+</p>
+
+4. Double-click the resistor to open the properties window.
+5. Adjust the Name and Resistance values as needed.
+6. Click `OK` to apply the changes or Click `Cancel` to discard any changes and close the window.
