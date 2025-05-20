@@ -6,9 +6,7 @@ sidebar_position: 1
 ## Overview
 Used when performing a steady-state simulation. This component provides a steady-state (DC) source that can supply either a fixed voltage or current between its two terminals. It is an ideal component, meaning it maintains a constant output regardless of the connected load.
 
-:::tip
-For instructions on adding a component to the simulation circuit, click [here](../introduction#how-to-add-a-component).
-:::
+
 
 ### DC Voltage Source
 Provides a fixed potential difference across its terminals with zero internal resistance, described by:
@@ -35,6 +33,10 @@ $$
 </div>
 
 ## Usage Instructions
+
+:::tip
+For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit).
+:::
 
 The DC Source Properties properties window window allows you to configure the parameters for a DC source. 
 

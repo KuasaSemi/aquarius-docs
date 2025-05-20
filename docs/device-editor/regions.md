@@ -40,8 +40,8 @@ To define a region:
 </div>
 
 The properties of these materials can be fully customised by the user during setup of the device model. There are two general types of semiconductor can be defined, namely:  
-- Single Composition (e.g. Si, GaAs, SiC)
-- Variable Composition (e.g. AlGaN, AlGaAs).
+- Constant Bandgap (e.g. Si, GaAs, SiC)
+- Variable Bandgap (e.g. AlGaN, AlGaAs).
 
 ### Doping
 <div class="properties-table">

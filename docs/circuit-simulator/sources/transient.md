@@ -11,15 +11,11 @@ There are four types of transient waveforms namely:
 1. Piecewise Linear (PWL) Waveform.
     - Allows the definition of custom, non-periodic waveforms by specifying a series of time-value pairs, creating a piecewise linear signal. This is useful for complex waveforms that cannot be captured by simple sine, triangle, or square waves.
 1. Sine Wave.
-    - Generates a sinusoidal current or voltage signal, characterized by its amplitude, frequency, and phase.
+    - Generates a sinusoidal current or voltage signal.
 1. Triangle Wave.
-    - Generates a linear, periodic triangular waveform, defined by its peak values and period.
+    - Generates a linear, periodic triangular waveform.
 1. Rectangle Wave.
     - Generates a square wave with programmable high and low states, as well as on/off times.
-
-:::tip
-For instructions on adding a component to the simulation circuit, click [here](../introduction#how-to-add-a-component).
-:::
 
 ## Parameters
 ### PWL
@@ -72,3 +68,31 @@ For instructions on adding a component to the simulation circuit, click [here](.
 | `Theta Start`         | The phase angle that determines the initial point within the waveform's cycle. | Degrees |
 
 </div>
+
+## Usage Instructions
+
+:::tip
+For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit).
+:::
+
+<p align="center">
+  <img src="/img/circuit-simulator/sources/transient/01.png" />
+</p>
+
+The steps below show how to configure the component effectively.
+
+### Adding Points 
+- Click `Add Point` to add individual points, each point is a time-voltage or time-current value.
+- Alternatively, you can `Import` a list of values from an external CSV file.
+
+### Remove Entries
+- Select a value from the list and left-click the cell to modify it's value.
+- Use `Delete Point` to remove a selected entry.
+- Use `Clear All` to remove all values from the list.
+
+### Adjust the Number of Cycles
+- To adjust the number of cycles for the waveform, edit the value in the text box.
+
+### Apply the Configuration
+- Once all parameters are set, click `OK` to save the changes.  
+- Click `Cancel` to discard any changes and close the window.

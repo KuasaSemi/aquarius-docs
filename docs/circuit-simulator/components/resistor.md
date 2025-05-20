@@ -10,10 +10,6 @@ $$
 V = IR
 $$
 
-:::tip
-For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit).
-:::
-
 ## Parameters
 
 <div class="properties-table">
@@ -24,3 +20,8 @@ For instructions on adding a component to the simulation circuit, click [here](.
 | `Resistance` | The fixed resistance value of the ideal resistor. | Ohms  |
 
 </div>
+
+## Usage Instructions
+:::tip
+For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit).
+:::

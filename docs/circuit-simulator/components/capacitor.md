@@ -15,10 +15,6 @@ $$
 
 where $C$ is the fixed capacitance value, and $\frac{dv}{dt}$ is the rate of change of the voltage.
 
-:::tip
-For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit.
-:::
-
 ## Parameters
 
 <div class="properties-table">
@@ -29,3 +25,8 @@ For instructions on adding a component to the simulation circuit, click [here](.
 | `Capacitance` | The fixed capacitance value of the ideal capacitor. | Farads |
 
 </div>
+
+## Usage Instructions
+:::tip
+For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit).
+:::

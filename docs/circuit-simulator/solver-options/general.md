@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 ## Overview
-...
+This section provides a brief introduction to the simulator's general settings and parameters, which control the behaviour and accuracy of the simulation engine.
 
 ## Parameters
 
