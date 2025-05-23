@@ -66,7 +66,7 @@ The two suggested workflows are:
 
 Ensure you have the following installed before proceeding:  
 
-- **Node.js**: Version **20**
+- **Node.js**: Version **18**
   - Note: Docusaurus does not yet support Version 22
   - If needed, download the latest version from [nodejs.org](https://nodejs.org/). 
   - Check your Node.js version:  
