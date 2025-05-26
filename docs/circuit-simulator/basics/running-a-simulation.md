@@ -12,7 +12,7 @@ To run any type of simulation, the circuit must be correctly connected and meet 
 
 ## Steady State
 To perform a steady state simulation:
-1. From the main menu, select Simulation..Steady State.
+1. From the main menu, select Simulation -> Steady State.
 2. The simulation window will appear and the simulation will start.
 3. When the simulation has finished, close the simulation window
 
@@ -21,7 +21,7 @@ A curve trace simulation is a type of steady-state simulation used to characteri
 
 ## Transient
 To perform a transient simulation:
-1. From the main menu, select Simulation..Transient.
+1. From the main menu, select Simulation -> Transient.
 2. Set the simulation end time to the required value.
 3. When the simulation has finished, close the simulation window
 Simulations can also be re-started from existing simulations as a continuation run from
