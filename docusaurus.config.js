@@ -2,6 +2,7 @@ const math = require("remark-math");
 const katex = require("rehype-katex");
 
 module.exports = {
+  title: "Aquarius TCAD Documentation",
   url: 'https://kuasasemi.github.io',
   baseUrl: '/docs/', // must match repo name
   organizationName: 'KuasaSemi',
