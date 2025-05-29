@@ -1,0 +1,23 @@
+---
+title: "IV Curve Tracer"
+sidebar_position: 5
+---
+
+# Hello
+
+## Overview
+The current voltage (IV) tracing algorithm is used to automatically trace around
+awkward IV characteristics by specifying how to start off the trace and when to stop the
+trace. The algorithm will then fill in the points in-between. This is particularly useful
+when the curve becomes very steep (such as in the case of avalanche breakdown) in
+which case the voltage source driven device becomes very unstable and will not
+converge. This algorithm drives one of the device contacts with a variable impedance
+current source (a voltage source in series with a resistor), this allows the source to look
+more like a current source on vertical sections of the curve. Using this algorithm it is
+possible to trace round complete curves that would not ordinarily be possible, such as
+the forward break-over characteristics of a thyristor. The algorithm uses the number of
+Newton iterations to control the step size.
+The IV Trace component is only valid for steady state simulation mode, and a 2D
+physical device model must also be present in the circuit. An IV trace should be directly
+connected to a device contact. Wires should not be used to connnect the IV trace to a
+device contact.

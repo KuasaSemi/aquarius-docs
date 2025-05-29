@@ -12,19 +12,19 @@ To define a region:
 1. From the Menu, select Define -> Region and select the type of geometry you would like to define (Rectangle, Polygon etc.).
 
 <p align="center">
-  <img src="/img/regions/01.png" width="800"/>
+  <img src="/img/device-editor/regions/01.png" width="800"/>
 </p>
 
 2. Use your cursor and mouse buttons to define the region shape. Or if importing geometry from a .csv file, select the file you want to use.
 
 <p align="center">
-  <img src="/img/regions/02.png" width="800"/>
+  <img src="/img/device-editor/regions/02.png" width="800"/>
 </p>
 
 3. Once the region's shape has been defined the region properties dialog box will appear.  Use this dialog to set the region's properties.
 
 <p align="center">
-  <img src="/img/regions/03.png" width="800"/>
+  <img src="/img/device-editor/regions/03.png" width="800"/>
 </p>
 
 ## Parameters
@@ -40,8 +40,8 @@ To define a region:
 </div>
 
 The properties of these materials can be fully customised by the user during setup of the device model. There are two general types of semiconductor can be defined, namely:  
-- Single Composition (e.g. Si, GaAs, SiC)
-- Variable Composition (e.g. AlGaN, AlGaAs).
+- Constant Bandgap (e.g. Si, GaAs, SiC)
+- Variable Bandgap (e.g. AlGaN, AlGaAs).
 
 ### Doping
 <div class="properties-table">

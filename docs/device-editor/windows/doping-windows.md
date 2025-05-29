@@ -76,6 +76,10 @@ $$
 y_{fact} = N_0 \exp \left( -\frac{y - y_{offset}}{\sigma_v} \right)
 $$
 
+:::note
+Check this equation
+:::
+
 - $N_0$ is the Peak doping concentration, given as the first vertical parameter.
 - $y$ is the distance in y direction below/above window.
 - $\sigma_v$ is the vertical straddle, given as 2nd vertical parameter.
