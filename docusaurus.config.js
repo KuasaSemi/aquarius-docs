@@ -2,14 +2,10 @@ const math = require("remark-math");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: "Aquarius Docs",
-  tagline: "Build optimized websites quickly, focus on your content",
-
-  favicon: "img/favicon.ico",
-
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
-
+  url: 'https://kuasasemi.github.io',
+  baseUrl: '/docs/', // must match repo name
+  organizationName: 'KuasaSemi',
+  projectName: 'aquarius-docs',
   themeConfig: {
     // Navigation Bar
     navbar: {
