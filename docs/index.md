@@ -14,5 +14,5 @@ Aquarius is an advanced TCAD package that brings state-of-the-art performance to
 Get started right away even if you are completely new to Avalonia using a simple step-by-step tutorial, with introductions to the basic concepts behind the framework.
 
 :::info
-Get started [here](get-started).
+Get started [here](/docs/get-started/general-introduction.md).
 :::
