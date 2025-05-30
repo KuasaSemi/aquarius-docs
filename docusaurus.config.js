@@ -2,13 +2,14 @@ const math = require("remark-math");
 const katex = require("rehype-katex");
 
 module.exports = {
-  title: "Aquarius Docs",
-  tagline: "Build optimized websites quickly, focus on your content",
-
-  favicon: "img/favicon.ico",
-
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  favicon: 'img/favicon.ico',
+  url: 'https://mawbydp.github.io', // GitHub Pages base URL
+  baseUrl: '/docs/',                // Use your repo name here
+  organizationName: 'KuasaSemi', // Your GitHub username or org
+  projectName: 'aquarius-docs',         // Your repo name
+  deploymentBranch: 'gh-pages',
 
   themeConfig: {
     // Navigation Bar
