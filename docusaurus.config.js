@@ -5,7 +5,7 @@ module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
-  url: 'https://mawbydp.github.io', // GitHub Pages base URL
+  url: 'https://kuasasemi.github.io', // GitHub Pages base URL
   baseUrl: '/docs/',                // Use your repo name here
   organizationName: 'KuasaSemi', // Your GitHub username or org
   projectName: 'aquarius-docs',         // Your repo name
