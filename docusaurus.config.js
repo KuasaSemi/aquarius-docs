@@ -20,7 +20,7 @@ module.exports = {
         srcDark: "img/logo/kuasasemi-logo-dark.png", // Dark Mode Logo
       },
       items: [
-        { to: "/docs/", label: "Docs", position: "right" },
+        { to: "/", label: "Docs", position: "right" },
         { href: "https://github.com/KuasaSemi", label: "GitHub", position: "right" },
       ],
     },
