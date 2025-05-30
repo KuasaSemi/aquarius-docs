@@ -27,34 +27,6 @@ module.exports = {
     // Footer
     footer: {
       style: "dark", // or "light"
-      links: [
-        {
-          title: "Company",
-          items: [
-            {
-              label: "About Us",
-              href: "/about",
-            },
-            {
-              label: "Careers",
-              href: "/careers",
-            },
-          ],
-        },
-        {
-          title: "Legal",
-          items: [
-            {
-              label: "Privacy Policy",
-              href: "/privacy",
-            },
-            {
-              label: "Terms of Service",
-              href: "/terms",
-            },
-          ],
-        },
-      ],
       copyright: `© ${new Date().getFullYear()} KuasaSemi Ltd. All rights reserved.`,
     },
   },
