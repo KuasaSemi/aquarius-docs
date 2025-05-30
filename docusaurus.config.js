@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
   url: 'https://kuasasemi.github.io', // GitHub Pages base URL
-  baseUrl: '/docs/',                // Use your repo name here
+  baseUrl: '/aquarius-docs/',                // Use your repo name here
   organizationName: 'KuasaSemi', // Your GitHub username or org
   projectName: 'aquarius-docs',         // Your repo name
   deploymentBranch: 'gh-pages',
