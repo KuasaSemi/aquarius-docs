@@ -2,6 +2,9 @@
 title: "Transient"
 sidebar_position: 2
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Transient Sources
 ## Overview
 Used when performing a time-dependent simulation. These components provide time-varying current or voltage sources that drive a circuit with a defined waveform over time. They are ideal sources, meaning their output is defined entirely by the specified waveform, regardless of the connected load.
@@ -76,7 +79,7 @@ For instructions on adding a component to the simulation circuit, click [here](.
 :::
 
 <p align="center">
-  <img src="/img/circuit-simulator/sources/transient/01.png" />
+  <img src={useBaseUrl('img/circuit-simulator/sources/transient/01.png')}/>
 </p>
 
 The steps below show how to configure the component effectively.

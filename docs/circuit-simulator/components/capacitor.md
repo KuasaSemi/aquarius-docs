@@ -26,7 +26,8 @@ where $C$ is the fixed capacitance value, and $\frac{dv}{dt}$ is the rate of cha
 
 </div>
 
+
 ## Usage Instructions
 :::tip
-For instructions on adding a component to the simulation circuit, click [here](../introduction#adding-a-component-to-the-simulation-circuit).
+For instructions on adding a component to the simulation circuit, click [here](../basics/adding-components.md).
 :::
