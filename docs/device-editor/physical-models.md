@@ -2,15 +2,17 @@
 sidebar_position: 6
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Physical Models
 A range of physical models are available to be used in the simulation. The physical models implemented in the simulator are fully configurable.
 To edit or view the physical models properties:
 1. From the main menu, select Model -> Model Selection.
 
 <p align="center">
-  <img src="/img/device-editor/physical-models/01.png" width="300"/>
-  <img src="/img/device-editor/physical-models/02.png" width="300"/>
-  <img src="/img/device-editor/physical-models/03.png" width="300"/>
+  <img src={useBaseUrl('img/device-editor/physical-models/01.png')} width="300"/>
+  <img src={useBaseUrl('img/device-editor/physical-models/02.png')} width="300"/>
+  <img src={useBaseUrl('img/device-editor/physical-models/03.png')} width="300"/>
 </p>
 
 ## Parameters

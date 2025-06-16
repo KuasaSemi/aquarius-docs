@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Mesh Generation
 
 ## Overview
@@ -14,13 +16,13 @@ To generate a finite element model:
 1. From the Menu, select Mesh -> Generate Finite Element Mesh Model. This will open the mesh properties dialog.
 
 <p align="center">
-  <img src="/img/device-editor/finite-element-mesh/mesh-generation/01.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/mesh-generation/01.png')} width="800"/>
 </p>
 
 2. If automatic mesh refinement is required, enable the Mesh Refinement Options checkbox. By default, this option is disabled. When enabled, you can adjust the mesh refinement settings as needed.
 
 <p align="center">
-  <img src="/img/device-editor/finite-element-mesh/mesh-generation/02.png" width="600"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/mesh-generation/02.png')} width="600"/>
 </p>
 
 3. Once you are satisfied with the settings, click `OK` to generate the mesh.
@@ -28,10 +30,10 @@ To generate a finite element model:
 4. Depending on the complexity of the device model and the meshing grid, the generation process may take some time. The progress of the mesh generation will be displayed in the status window in the centre of the screen. Once complete, the finished FE model will be displayed. The P and N regions of the device will also be plotted, highlighting the position of the metallurgical junction, which is the point where the net doping concentration is zero Atoms/cm³.
 
 <p align="center">
-  <img src="/img/device-editor/finite-element-mesh/mesh-generation/03.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/mesh-generation/03.png')} width="800"/>
 </p>
 
-## Mesh Refinement Parameters
+## Parameters
 
 <div class="properties-table">
 

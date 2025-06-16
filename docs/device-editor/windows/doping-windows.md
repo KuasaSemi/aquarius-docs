@@ -3,6 +3,8 @@ title: "Doping"
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Doping Windows
 
 ## Overview
@@ -13,19 +15,19 @@ To define a doping window:
 1. From the Menu, select Define -> Window -> Doping.
 
 <p align="center">
-  <img src="/img/device-editor/windows/doping/01.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/windows/doping/01.png')} width="800"/>
 </p>
 
 2. Use your cursor and mouse buttons to define a rectangular doping window.
 
 <p align="center">
-  <img src="/img/device-editor/windows/doping/02.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/windows/doping/02.png')} width="800"/>
 </p>
 
 3. Once the window's shape has been defined the doping window's properties dialog box will appear.  Use this dialog to set the window's properties.
 
 <p align="center">
-  <img src="/img/device-editor/windows/doping/03.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/windows/doping/03.png')} width="800"/>
 </p>
 
 ## Parameters
@@ -33,13 +35,13 @@ To define a doping window:
 
 <div class="properties-table">
 
-| Name        | Description                                                 | Unit       |
-|-------------|-------------------------------------------------------------|------------|
-| `Name`     | A unique identifier for the window.                      | -          |
-| `Colour`     | Used to define visual colour of the region (Not used in the solver). | -          |
+| Name            | Description                                                                      | Unit       |
+|-----------------|----------------------------------------------------------------------------------|------------|
+| `Name`          | A unique identifier for the window.                                              | -          |
+| `Colour`        | Used to define visual colour of the region (Not used in the solver).             | -          |
 | `Edge Symmetry` | Used to select the shape of the diffusion. Options: [Normal, Left Symmetric, Right Symmetric or Double Symmetric] | -          |
-| `Direction` | Used to select the direction of the implant. Options: [Upwards, Downwards, Both] | -          |
-| `Doping` | Used to specify the type of doping implant. Options: [Donor, Acceptor] | -          |
+| `Direction`     | Used to select the direction of the implant. Options: [Upwards, Downwards, Both] | -          |
+| `Doping`        | Used to specify the type of doping implant. Options: [Donor, Acceptor]           | -          |
 
 </div>
 
@@ -50,10 +52,10 @@ Available materials include Si, SiC, Oxide, Air (more coming soon). The properti
 ### Doping
 <div class="properties-table">
 
-| Name        | Description                                                 | Unit       |
-|-------------|-------------------------------------------------------------|------------|
-| `Acceptor`  | Used to define the acceptor doping concentration in the region.                         | Atoms/cm³  |
-| `Donor`     | Used to define the donor doping concentration in the region.       | Atoms/cm³  |
+| Name        | Description                                                     | Unit       |
+|-------------|-----------------------------------------------------------------|------------|
+| `Acceptor`  | Used to define the acceptor doping concentration in the region. | Atoms/cm³  |
+| `Donor`     | Used to define the donor doping concentration in the region.    | Atoms/cm³  |
 
 </div>
 
@@ -62,10 +64,10 @@ After a region has been defined, the user can specify a constant compositional p
 
 <div class="properties-table">
 
-| Name        | Description                                                 | Unit       |
-|-------------|-------------------------------------------------------------|------------|
-| `Mole Fraction X` | Used to define the acceptor doping concentration in the region.                         | Atoms/cm³  |
-| `Mole Fraction Y` | Used to define the donor doping concentration in the region.       | Atoms/cm³  |
+| Name              | Description                                                     | Unit       |
+|-------------------|-----------------------------------------------------------------|------------|
+| `Mole Fraction X` | Used to define the acceptor doping concentration in the region. | Atoms/cm³  |
+| `Mole Fraction Y` | Used to define the donor doping concentration in the region.    | Atoms/cm³  |
 
 </div>
 
@@ -158,8 +160,6 @@ $$
 
 - $y$ is the distance in y direction below/above window.
 - $\sigma_l$ is the lateral straddle, given as 1st lateral parameter.
-
-A window point is defined as...?
 
 ## Total Doping
 The total doping at point is defined as:

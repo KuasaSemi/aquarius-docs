@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Meshing Grid
 
 ## Overview
@@ -16,13 +18,13 @@ To define a rectangular meshing grid:
 1. From the Menu, select Mesh -> Define Mesh Construction Grid. This will open a properties dialog.
 
 <p align="center">
-  <img src="/img/device-editor/finite-element-mesh/meshing-grid/01.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/meshing-grid/01.png')} width="800"/>
 </p>
 
 2. Click the `Add` button to create a new group of grid lines.
 
 <p align="center">
-  <img src="/img/device-editor/finite-element-mesh/meshing-grid/02.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/meshing-grid/02.png')} width="800"/>
 </p>
 
 3. In the dialog box, define the properties of the grid line group.
@@ -31,7 +33,7 @@ To define a rectangular meshing grid:
 6. Click `OK` to generate the collection of grid lines over the defined area.
 
 <p align="center">
-  <img src="/img/device-editor/finite-element-mesh/meshing-grid/03.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/meshing-grid/03.png')} width="800"/>
 </p>
 
 Repeat this process for both the horizontal (X) and vertical (Y) directions until a suitable meshing grid of intersecting lines is achieved.
