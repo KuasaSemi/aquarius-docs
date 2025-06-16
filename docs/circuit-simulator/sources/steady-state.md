@@ -2,6 +2,9 @@
 title: "Steady State (DC)"
 sidebar_position: 1
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Steady State Sources
 ## Overview
 Used when performing a steady-state simulation. This component provides a steady-state (DC) source that can supply either a fixed voltage or current between its two terminals. It is an ideal component, meaning it maintains a constant output regardless of the connected load.
@@ -41,7 +44,7 @@ For instructions on adding a component to the simulation circuit, click [here](.
 The DC Source Properties properties window window allows you to configure the parameters for a DC source. 
 
 <p align="center">
-  <img src="/img/circuit-simulator/sources/01.png" />
+  <img src={useBaseUrl('img/circuit-simulator/sources/01.png')}/>
 </p>
 
 The steps below show how to configure the component effectively.

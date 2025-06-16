@@ -2,6 +2,8 @@
 sidebar_position: 5
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Material Properties
 
 Aquarius includes a library of commonly used semiconductor and non-semiconductor materials. All materials are fully customisable and can be edited by the user. Additionally, users can save and load their own parameter files for individual materials and the full material library.
@@ -10,13 +12,13 @@ To edit or view the material properties:
 1. From the main menu, select Model -> Material Library.
 
 <p align="center">
-  <img src="/img/device-editor/material-properties/01.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/material-properties/01.png')}/>
 </p>
 
 2. In the materials library, users can edit, delete, import, and export individual materials as Material Properties (.mat) files or manage the entire library as Material Library (.mlb) files. Users can modify the properties of each material or define entirely new materials.
 
 <p align="center">
-  <img src="/img/device-editor/material-properties/02.png" width="300"/>
+  <img src={useBaseUrl('img/device-editor/material-properties/02.png')}/>
 </p>
 
 ## Parameters

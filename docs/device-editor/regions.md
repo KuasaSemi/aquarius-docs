@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Regions
 
 ## Overview
@@ -12,19 +14,19 @@ To define a region:
 1. From the Menu, select Define -> Region and select the type of geometry you would like to define (Rectangle, Polygon etc.).
 
 <p align="center">
-  <img src="/img/device-editor/regions/01.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/regions/01.png')} width="800"/>
 </p>
 
 2. Use your cursor and mouse buttons to define the region shape. Or if importing geometry from a .csv file, select the file you want to use.
 
 <p align="center">
-  <img src="/img/device-editor/regions/02.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/regions/02.png')} width="800"/>
 </p>
 
 3. Once the region's shape has been defined the region properties dialog box will appear.  Use this dialog to set the region's properties.
 
 <p align="center">
-  <img src="/img/device-editor/regions/03.png" width="800"/>
+  <img src={useBaseUrl('img/device-editor/regions/03.png')} width="800"/>
 </p>
 
 ## Parameters
@@ -70,8 +72,8 @@ After a region has been defined, the user can specify a constant compositional p
 Once a region has been defined, users can modify its geometric points to adjust its shape. Users can add, edit, and delete points as needed.
 
 - Editing Coordinates: Modify the region’s coordinates by directly editing the values in the table cells.
-- Adding a Point: Click the Add button to insert a new point.
-- Deleting a Point: Select the point to be removed and click Delete Region.
+- Adding a Point: Click the `Add` button to insert a new point.
+- Deleting a Point: Select the point to be removed and click `Delete`.
 
 The region points are specified in a clockwise direction, so ensure they remain in the correct order to avoid inverting the shape.
 
