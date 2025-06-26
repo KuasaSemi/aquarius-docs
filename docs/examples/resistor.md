@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Resistor
 
-## Introduction
+## Overview
 In this example project, a simple uniformly doped n-type silicon resistor is modeled and simulated to demonstrate the basic workflow of semiconductor device simulation. An analytical resistance is calculated from fundamental semiconductor relations based on geometry, doping concentration, and mobility. The simulation includes geometry definition, doping profile assignment, physical model selection, contact specification, and bias application. The extracted current is used to compute the simulated resistance, and the result is compared with the analytical expectation. This example serves both as a simple validation case for the Aquarius TCAD environment and as an instructional reference for users implementing basic electrical simulations of passive devices.
 
 ## Parameters
@@ -62,5 +62,5 @@ $$
 
 Now substitute into the resistance formula:
 $$
-R = \frac{(1.0 \times 10^{-4})}{(1.6 \times 10^{-19}) \cdot (1000) \cdot (1 \times 10^{-16}) \cdot (1.0 \times 10^{-8})} = \underline{\mathbf{62.5\text{k}\Omega}}
+R = \frac{(1.0 \times 10^{-4})}{(1.6 \times 10^{-19}) \cdot (1000) \cdot (1.0 \times 10^{-16}) \cdot (1.0 \times 10^{-8})} = \underline{\mathbf{62.5\text{k}\Omega}}
 $$
