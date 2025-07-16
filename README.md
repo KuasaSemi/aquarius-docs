@@ -7,6 +7,8 @@ The repository holds the code and markdown source files for the Aquarius documen
 
 These docs are built using [Docusaurus](https://docusaurus.io/), a modern static site generator that makes it easy to create and maintain documentation websites.
 
+If you want to use the shortcut for VS Code, all you have to do is press the Ctrl + K and then press the V key and it will bring the preview panel:
+
 🚀 Get started by exploring the sections below!
 
 ## Index
