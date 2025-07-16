@@ -18,9 +18,9 @@ In this example project, a simple uniformly doped n-type silicon resistor is mod
 
 | Parameter             | Symbol       | Value               | Unit            | Description                              |
 |-----------------------|--------------|---------------------|-----------------|------------------------------------------|
-| Length                | $L$          | 1                   | cm              | Distance between the two contacts.       |
-| Width                 | $W$          | 1                   | cm              | Lateral width of the resistor.           |
-| Height                | $H$          | 1                   | cm              | Vertical thickness of the resistor.      |
+| Length                | $L$          | $1 \times 10^{-3}$  | cm              | Distance between the two contacts.       |
+| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor (Scaling Factor)   |
+| Height                | $H$          | $1 \times 10^{-4}$  | cm              | Vertical thickness of the resistor.      |
 | Doping Concentration  | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
 | Carrier Mobility      | $\mu_n$      | 1000                | cm$^{2}$ /V·s   | Nominal electron mobility (constant).    |
 
@@ -36,7 +36,7 @@ Where:
 - $R$ = resistance (Ω)  
 - $\rho$ = resistivity of doped silicon (Ω·cm)  
 - $L$ = length of the resistor (cm)  
-- $A$ = cross-sectional area = width × thickness (cm²)
+- $A$ = cross-sectional area = Height × Depth (cm²)
 
 In a doped semiconductor, the resistivity $\rho$ is related to the doping concentration and carrier mobility as follows:
 $$
@@ -57,10 +57,10 @@ $$
 ## Example Calculation
 Using the parameter values defined above:
 $$
-A = W \cdot D = (1.0 \times 10^{-4}) \cdot (1.0 \times 10^{-4}) = 1.0 \times 10^{-8} cm^{2}
+A = H \cdot D = 10^{-4} \cdot 10^{-4} = 10^{-8} cm^{2}
 $$
 
 Now substitute into the resistance formula:
 $$
-R = \frac{(1.0 \times 10^{-4})}{(1.6 \times 10^{-19}) \cdot (1000) \cdot (1.0 \times 10^{-16}) \cdot (1.0 \times 10^{-8})} = \underline{\mathbf{62.5\text{k}\Omega}}
+R = \frac{1.0 \times 10^{-3}}{(1.6 \times 10^{-19}) \cdot 1000 \cdot (1.0 \times 10^{16}) \cdot (1.0 \times 10^{-8})} = \underline{\mathbf{62.5\text{k}\Omega}}
 $$
