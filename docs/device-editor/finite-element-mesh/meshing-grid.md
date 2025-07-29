@@ -30,13 +30,17 @@ To define a rectangular meshing grid:
 3. In the dialog box, define the properties of the grid line group.
 4. Specify the rectangular area using X and Y coordinates, for example, (0,0) to (5,5).
 5. Set the spacing between the grid lines.
-6. Click `OK` to generate the collection of grid lines over the defined area.
+6. The grid lines will appear overlaid on the device structure.
+7. Click `OK` to generate the collection of grid lines over the defined area.
+
 
 <p align="center">
   <img src={useBaseUrl('img/device-editor/finite-element-mesh/meshing-grid/03.png')} width="800"/>
 </p>
 
 Repeat this process for both the horizontal (X) and vertical (Y) directions until a suitable meshing grid of intersecting lines is achieved.
+
+**Close** the Mesh Construction Grid window by clicking the **X** in the top-right corner.
 
 ## Parameters
 Each collection of grid lines is defined by the following parameters.
