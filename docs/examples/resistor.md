@@ -273,13 +273,24 @@ Next results visualiser will be used to understand the output of the simulation.
 
 The **resistance** was earlier calculated and is expected to be: $$R = 62.5k\,\Omega$$, therfore, a linear relationship between the voltage and current is expected.
 - Click `External Plot` at the top of the results visualiser.
+- Set **External Plot Settings**:
+  - The file should match your results file name.
+  - `X Axis Contact = DEV1.A`
+  - `X Axis Variable = Voltage`
+  - `Y Axis Contact = DEV1.A`
+  - `X Axis Variable = Total Current`
+  - Click check box to turn on `Show Tick Marks`
+- Click `New Plot` and a plot of **Total Current (A)** at terminal **A** of **DEV1** (which is the name of the resistor) **Vs** the **Voltage (V)** at the same terminal.It can be seen that the relationship between voltage and current is linear as expected. 
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/18.png')} />
 </p>
 
-### 4.2 Transient Simulation
+Using simple Ohm's law the expected current $I$ through the device at a voltage $V$ can be calculated
+$$
+I = \frac{V}{R} = \frac{100V}{62.5k\,\Omega} = \frac{100}{62.5 \times 10^{3}} = 1.6mA
+$$
 
-#### 4.2.1 Add Trasient Voltage Source
+It can be seen on the plot that the **Total Current** at **100V** is approimatley $$1.6mA$$ as expected.
 
-#### 4.2.1 Run Simulation
+This concludes the Resistor example tutorial.
