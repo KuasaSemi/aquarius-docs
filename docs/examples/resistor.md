@@ -189,11 +189,18 @@ Next the resistor will be used in a simple steady state example.
 
 #### 4.2.1 Create Circuit
 
-The circuit to be simulated will need to be created. 
+The circuit must be designed before simulation can begin.
 
-A **device** (the resistor), a **DC Voltage Source** and a **Ground** will be added and connected together.
+A **device** (the resistor), a **DC Voltage Source** and a **Ground** will be added to the circuit editor and connected together.
 
 ##### 4.2.1.1 Add Device
+
+- Select the **Device**<img src={useBaseUrl('img/icons/device.png')} width="30" alt="Device Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar and drag and drop it onto the circuit editor.
+- Set the device Properties:
+  - Click `Get .sdm File`, select the device file that you created in the previous steps and click `OK`.
+  -  Ensure **Scaling Factor (cm)** is set to `0.0001`. Which sets the device depth to 1$\mu$m depth.
+  - Click `OK` to close the **Device Properties**.
+- **Note:** The device can be rotated by `left clicking` on it to select it and then using `ctrl + r` to rotate it by $90^\circ$.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/13.png')} />
@@ -205,12 +212,27 @@ For more detailed instructions on **Adding Components**, click [here](../circuit
 
 ##### 4.2.1.2 Add DC Voltage Source & Ground
 
+- Select the **DC Voltage Source**<img src={useBaseUrl('img/icons/dcVoltageSource.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `dragging and droping` it onto the circuit editor.
+- Select the **Ground**<img src={useBaseUrl('img/icons/ground.png')} width="20" alt="Ground Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `dragging and droping` it onto the circuit editor.
+- **Connect** the components togeter as they are in the image below.
+
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/14.png')} />
 </p>
 
+:::tip
+For more detailed instructions on **Wiring Circuits**, click [here](../circuit-simulator/basics/wiring-circuits.md).
+:::
 
 ##### 4.2.1.3 Set DC Voltage Source Properties
+
+- `Double click` on the **DC Voltage Source** to open its **properties**.
+- Click `Add Range` to open the **Add Range Properties** and set to the values below:
+  - `Start Voltage (V) = 0`
+  - `End Voltage (V) = 100`
+  - `Step (V) = 1`
+  - Click `OK` to set the range.
+- Click `OK` to set the DC Voltage Source Properties.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/15.png')} />
@@ -222,20 +244,38 @@ For more detailed instructions on **Steady State (DC) Sources**, click [here](..
 
 #### 4.2.2 Run Simulation
 
-<p align="center">
-  <img src={useBaseUrl('img/examples/resistor/16.png')} />
-</p>
+To run the Steady State Simulation press the blue run button<img src={useBaseUrl('img/icons/steadyStateSimulation.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} />, alternatively in the menu use `Simulation` → `Steady State`.
 
 :::tip
 For more detailed instructions on **Running a Simulations**, click [here](../circuit-simulator/basics/running-a-simulation.md).
 :::
 
+The simulation will begin and the **Simulation Status** will appear on the screen. Wait until the simultion has completed at which point **Simulation Stopped** will apear in the bottom left of the status window and the text *Aquarius simulator completed execution* will be show in the screen.
+
+:::tip
+For more detailed instructions on the **Simulation Status** output, click [here](../circuit-simulator/basics/running-a-simulation.md).
+:::
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/16.png')} />
+</p>
+
 #### 4.2.2 Visualise outputs
 
-The resistance was earlier calculated and is expected to be: $$R = 62.5\,\Omega$$
+Next results visualiser will be used to understand the output of the simulation.
+
+- On the **Start Page** Click **Open Results Visualiser** (the third option).
+- The **Results Visualiser** will open with an empty workspace.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/17.png')} />
+</p>
+
+The **resistance** was earlier calculated and is expected to be: $$R = 62.5k\,\Omega$$, therfore, a linear relationship between the voltage and current is expected.
+- Click `External Plot` at the top of the results visualiser.
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/18.png')} />
 </p>
 
 ### 4.2 Transient Simulation
