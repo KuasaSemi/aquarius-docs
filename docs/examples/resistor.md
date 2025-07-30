@@ -6,10 +6,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Resistor
 
-## Overview
+## 1. Overview
 In this example project, a simple uniformly doped n-type silicon resistor is modelled and simulated to demonstrate the basic workflow of semiconductor device simulation. An analytical resistance is calculated from fundamental semiconductor relations based on geometry, doping concentration, and mobility. The simulation includes geometry definition, doping profile assignment, physical model selection, contact specification, and bias application. The extracted current is used to compute the simulated resistance, and the result is compared with the analytical expectation. This example serves both as a simple validation case for the Aquarius TCAD environment and as an instructional reference for users implementing basic electrical simulations of passive devices.
 
-## Parameters
+## 2. Parameters
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/01.png')} width="600"/>
@@ -24,9 +24,9 @@ In this example project, a simple uniformly doped n-type silicon resistor is mod
 | Doping Concentration  | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
 | Carrier Mobility      | $\mu_n$      | 1000                | cm$^{2}$ /V·s   | Nominal electron mobility (constant).    |
 
-## Analytical Result
+## 3. Analytical Result
 
-### Resistance Formula
+### 3.1. Resistance Formula
 The analytical resistance of a uniformly doped semiconductor resistor can be derived from Ohm’s law and the definition of resistivity in terms of semiconductor transport properties. The total resistance $R$ between two terminals of a rectangular resistor is given by:
 
 $$
@@ -55,7 +55,7 @@ R = \frac{L}{q \cdot \mu \cdot N \cdot A}
 $$
 
 
-### Example Calculation
+### 3.2 Example Calculation
 Using the parameter values defined above:
 $$
 A = H \cdot D = 10^{-4} \cdot 10^{-4} = 10^{-8} cm^{2}
@@ -66,13 +66,13 @@ $$
 R = \frac{1.0 \times 10^{-3}}{(1.6 \times 10^{-19}) \cdot 1000 \cdot (1.0 \times 10^{16}) \cdot (1.0 \times 10^{-8})} = \underline{\mathbf{62.5\text{k}\Omega}}
 $$
 
-## Simulation Result
+## 4. Resistor in Aquarius
 
-### Creating the Device Model
+### 4.1 Creating the Device Model
 
 To create a resistor device model in Aquarius, follow the steps below:
 
-#### 1. Launch the Device Editor
+#### 4.1.1. Launch the Device Editor
 
 - Open the Aquarius application.
 - On the **Start Page**, three options are available:
@@ -80,13 +80,13 @@ To create a resistor device model in Aquarius, follow the steps below:
   2. New Simulation
   3. Open Results Visualiser
 - Click **New Device Model** (the first option).
-- The Device Editor will open with an empty workspace.
+- The **Device Editor** will open with an empty workspace.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/02.png')} />
 </p>
 
-#### 2. Define the Device Geometry
+#### 4.1.2. Define the Device Geometry
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/04.png')} />
@@ -115,7 +115,7 @@ For more detailed instructions on **defining regions**, click [here](../device-e
   <img src={useBaseUrl('img/examples/resistor/06.png')} />
 </p>
 
-#### 3. Define the Device Contacts
+#### 4.1.3. Define the Device Contacts
 
 With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the left and right edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied.
 
@@ -127,7 +127,7 @@ With the device geometry and material properties defined, the next step is to **
 For more detailed instructions on defining contacts, click [here](../device-editor/contacts#usage-instructions).
 :::
 
-#### 4. Define the Finite Element Mesh
+#### 4.1.4. Define the Finite Element Mesh
 
 For a simple resistor with uniform material properties and no junctions, a **coarse mesh** is sufficient. It provides a good balance between **simulation accuracy** and **computational efficiency**, avoiding unnecessary refinement that would increase computation time without significant benefit.
 
@@ -165,7 +165,7 @@ For more detailed instructions on **generating the finite element mesh**, click 
   <img src={useBaseUrl('img/examples/resistor/10.png')} />
 </p>
 
-#### 5. Save the Device Model
+#### 4.1.5. Save the Device Model
 
 - In the Menu Bar, select `File` → `Save As...`. The Save dialog will open.
 - Navigate to the folder you wish to save the device in.
@@ -176,7 +176,70 @@ For more detailed instructions on **generating the finite element mesh**, click 
   <img src={useBaseUrl('img/examples/resistor/11.png')} />
 </p>
 
+### 4.2 Steady State Simulation
 
-### Simulation Setup
+Next the resistor will be used in a simple steady state example.
 
-### Results
+- On the **Start Page** Click **New Simulation** (the second option).
+- The **Circuit Editor** will open with an empty workspace.
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/12.png')} />
+</p>
+
+#### 4.2.1 Create Circuit
+
+The circuit to be simulated will need to be created. 
+
+A **device** (the resistor), a **DC Voltage Source** and a **Ground** will be added and connected together.
+
+##### 4.2.1.1 Add Device
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/13.png')} />
+</p>
+
+:::tip
+For more detailed instructions on **Adding Components**, click [here](../circuit-simulator/basics/adding-components.md).
+:::
+
+##### 4.2.1.2 Add DC Voltage Source & Ground
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/14.png')} />
+</p>
+
+
+##### 4.2.1.3 Set DC Voltage Source Properties
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/15.png')} />
+</p>
+
+:::tip
+For more detailed instructions on **Steady State (DC) Sources**, click [here](../circuit-simulator/sources/steady-state.md).
+:::
+
+#### 4.2.2 Run Simulation
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/16.png')} />
+</p>
+
+:::tip
+For more detailed instructions on **Running a Simulations**, click [here](../circuit-simulator/basics/running-a-simulation.md).
+:::
+
+#### 4.2.2 Visualise outputs
+
+The resistance was earlier calculated and is expected to be: $$R = 62.5\,\Omega$$
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/17.png')} />
+</p>
+
+### 4.2 Transient Simulation
+
+#### 4.2.1 Add Trasient Voltage Source
+
+#### 4.2.1 Run Simulation

@@ -28,6 +28,10 @@ const config = {
       style: 'dark',
       copyright: `© ${new Date().getFullYear()} KuasaSemi Ltd. All rights reserved.`,
     },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 5,
+    },
   },
 
   presets: [
