@@ -117,7 +117,7 @@ For more detailed instructions on **defining regions**, click [here](../device-e
 
 #### 4.1.3. Define the Device Contacts
 
-With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the left and right edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied.
+With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the left and right edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied. See **Tip** below for more details.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/07.png')} />
@@ -144,7 +144,7 @@ Define the **Mesh Construction Grid:**
     - Set the **Interval** to `Fixed`.
     - Set the **Coordinates** of the box that will contain the mesh line to:
       - `X1 = 0`
-      - `Y2 = 10`
+      - `X2 = 10`
       - `Y1 = 1`
       - `Y2 = 0`
     - Set the **Spacing Between Lines** to `1.0` microns.
