@@ -129,7 +129,7 @@ Define 2 **contacts**, `A` on the left of the device and `B` on the right as can
   1. From the Menu, select `Define` → `Contact`.
   2. Using the cursor, hover the cursor over the **left** geometric edge that will make up the contact. When the edge is highlighted in green and the cursor changes to indicate a selectable element, `left-click` to select the edge.
   3. Next `right-click` anywhere to open the properties dialog for the contact.  Use this dialog to set the contact's properties.
-  4. In the **General** section of the **Contact Properties** window, set the **Name** to `A` and the **Colour** to `red` (note: Leave the colour as red if it already red)
+  4. In the **General** section of the **Contact Properties** window, set the **Name** to `A` and the **Colour** to `red` (note: Leave the colour as red if it is already red)
   5. Leave all of the other **contact properties** as the `default` values. 
   6. Click `OK`.
 
