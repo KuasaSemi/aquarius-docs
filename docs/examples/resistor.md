@@ -131,19 +131,35 @@ For more detailed instructions on defining contacts, click [here](../device-edit
 
 For a simple resistor with uniform material properties and no junctions, a **coarse mesh** is sufficient. It provides a good balance between **simulation accuracy** and **computational efficiency**, avoiding unnecessary refinement that would increase computation time without significant benefit.
 
-Define the **Mesh Construction Grid:**
+Define the **Mesh Construction Grid:** 
+- In the menu toolbar at the top select: `Mesh` → `Define Mesh Construction Grid`.
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/08.png')} />
 </p>
 
-  - Set the **Orientation** to `Vertical`.
-  - Set the **Interval** to `Fixed`.
-  - Set the **Coordinates** to:
-    - `X1 = 0`
-    - `Y1 = 0`
-    - `X2 = 10`
-    - `Y2 = 1`
-  - Set the **Spacing Between Lines** to `1.0` microns.
+- Firstly **vertical** grid lines will be added. 
+  - In the **Mesh Construction Grid** window click `Add`.
+  - The **Mesh Grid Lines** window will open. Set the below properties: 
+    - Set the **Orientation** to `Vertical`.
+    - Set the **Interval** to `Fixed`.
+    - Set the **Coordinates** of the box that will contain the mesh line to:
+      - `X1 = 0`
+      - `Y2 = 10`
+      - `Y1 = 1`
+      - `Y2 = 0`
+    - Set the **Spacing Between Lines** to `1.0` microns.
+  - Click `OK`
+- The grid lines will be set as in the image below:  
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/19.png')} />
+</p>
+
+- Next the **horizontal** grid lines will be added.
+  - In the **Mesh Construction Grid** window click `Add` again.
+  - Set the properties to the same values as above but change the **Orientation** to `Horizontal`.
+- The Horizontal grid lines will be added.
+- click `x` in the top right corner to close the **Mesh Construction Grid** window.
 
 :::tip
 For more detailed instructions on **defining the mesh construction grid**, click [here](../device-editor/finite-element-mesh/meshing-grid.md#usage-instructions).
@@ -154,7 +170,7 @@ For more detailed instructions on **defining the mesh construction grid**, click
 </p>
 
 Generate the **Finite Element Mesh:**
-- In the Menu Bar, select `Mesh` → `Generate Finite Element Mesh Model`. The Mesh Generation dialog will open.
+- In the Menu Bar, select `Mesh` → `Generate Finite Element Mesh Model`. The **Mesh Properties** window will open.
 - No refinement is required for this model, so click `OK` to generate the mesh with default settings.
 
 :::tip
@@ -210,7 +226,7 @@ A **device** (the resistor), a **DC Voltage Source** and a **Ground** will be ad
 For more detailed instructions on **Adding Components**, click [here](../circuit-simulator/basics/adding-components.md).
 :::
 
-##### 4.2.1.2 Add DC Voltage Source & Ground
+##### 4.2.1.2 Add Source & Ground
 
 - Select the **DC Voltage Source**<img src={useBaseUrl('img/icons/dcVoltageSource.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `dragging and droping` it onto the circuit editor.
 - Select the **Ground**<img src={useBaseUrl('img/icons/ground.png')} width="20" alt="Ground Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `dragging and droping` it onto the circuit editor.
@@ -224,7 +240,7 @@ For more detailed instructions on **Adding Components**, click [here](../circuit
 For more detailed instructions on **Wiring Circuits**, click [here](../circuit-simulator/basics/wiring-circuits.md).
 :::
 
-##### 4.2.1.3 Set DC Voltage Source Properties
+##### 4.2.1.3 Set Source Properties
 
 - `Double click` on the **DC Voltage Source** to open its **properties**.
 - Click `Add Range` to open the **Add Range Properties** and set to the values below:
@@ -242,9 +258,13 @@ For more detailed instructions on **Wiring Circuits**, click [here](../circuit-s
 For more detailed instructions on **Steady State (DC) Sources**, click [here](../circuit-simulator/sources/steady-state.md).
 :::
 
+- **Save** the simulation at this point. The circuit will be saved in a `.sol` solution file format.  
+
 #### 4.2.2 Run Simulation
 
 To run the Steady State Simulation press the blue run button<img src={useBaseUrl('img/icons/steadyStateSimulation.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} />, alternatively in the menu use `Simulation` → `Steady State`.
+
+*Note: If the file has not been saved yet, there will be a prompt at this point to save before the simulation can run.*
 
 :::tip
 For more detailed instructions on **Running a Simulations**, click [here](../circuit-simulator/basics/running-a-simulation.md).
@@ -265,7 +285,8 @@ For more detailed instructions on the **Simulation Status** output, click [here]
 Next results visualiser will be used to understand the output of the simulation.
 
 - On the **Start Page** Click **Open Results Visualiser** (the third option).
-- The **Results Visualiser** will open with an empty workspace.
+- The **Results Visualiser** will ask the user to select a `.res` results file. 
+- Then the **Results Visualiser** will open with the selected results file loaded.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/17.png')} />
@@ -280,7 +301,7 @@ The **resistance** was earlier calculated and is expected to be: $$R = 62.5k\,\O
   - `Y Axis Contact = DEV1.A`
   - `X Axis Variable = Total Current`
   - Click check box to turn on `Show Tick Marks`
-- Click `New Plot` and a plot of **Total Current (A)** at terminal **A** of **DEV1** (which is the name of the resistor) **Vs** the **Voltage (V)** at the same terminal.It can be seen that the relationship between voltage and current is linear as expected. 
+- Click `New Plot` to generate a graph showing **Total Current (A)** at terminal **A** of **DEV1** (the resistor's name) **versus** the **Voltage (V)** at the same terminal. The plot demonstrates a linear relationship between voltage and current, as expected.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/18.png')} />
