@@ -117,11 +117,26 @@ For more detailed instructions on **defining regions**, click [here](../device-e
 
 #### 4.1.3. Define the Device Contacts
 
-With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the left and right edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied. See **Tip** below for more details.
+With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the left and right edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/07.png')} />
 </p>
+
+Define 2 **contacts**, `A` on the left of the device and `B` on the right as can been seen in the image above. 
+
+- Define **first** contact:
+  1. From the Menu, select `Define` → `Contact`.
+  2. Using the cursor, hover the cursor over the **left** geometric edge that will make up the contact. When the edge is highlighted in green and the cursor changes to indicate a selectable element, `left-click` to select the edge.
+  3. Next `right-click` anywhere to open the properties dialog for the contact.  Use this dialog to set the contact's properties.
+  4. In the **General** section of the **Contact Properties** window, set the **Name** to `A` and the **Colour** to `red` (note: Leave the colour as red if it already red)
+  5. Leave all of the other **contact properties** as the `default` values. 
+  6. Click `OK`.
+
+- Define **second** contact. Follow steps **1-6** above, but instead:
+  1. Select the **right** geometric edge.
+  2. In the **Contact Properties** window, set the **Name** to `B` and the **Colour** to `green`.
+  3. Click `OK`.
 
 :::tip
 For more detailed instructions on defining contacts, click [here](../device-editor/contacts#usage-instructions).
