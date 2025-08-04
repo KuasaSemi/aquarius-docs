@@ -12,7 +12,7 @@ Electrical, thermal and electrothermal contacts can be assigned to any edge—or
 ## Usage Instructions
 
 To define a contact:
-1. From the Menu, select Define -> Contact.
+1. From the Menu, select `Define` → `Contact`.
 
 <p align="center">
   <img src={useBaseUrl('img/device-editor/contacts/01.png')} width="800"/>
