@@ -12,17 +12,17 @@ In this example project, a simple uniformly doped n-type silicon resistor is mod
 ## 2. Parameters
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/resistor/01.png')} width="600"/>
+  <img src={useBaseUrl('img/examples/resistor/01.png')} height="600"/>
 </p>
 
 
 | Parameter             | Symbol       | Value               | Unit            | Description                              |
 |-----------------------|--------------|---------------------|-----------------|------------------------------------------|
 | Length                | $L$          | $1 \times 10^{-3}$  | cm              | Distance between the two contacts.       |
-| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor (Scaling Factor)   |
-| Height                | $H$          | $1 \times 10^{-4}$  | cm              | Vertical thickness of the resistor.      |
+| Width                 | $W$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor.                   |
+| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Vertical thickness of the resistor.      |
 | Doping Concentration  | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
-| Carrier Mobility      | $\mu_n$      | 1000                | cm$^{2}$ /V·s   | Nominal electron mobility (constant).    |
+| Carrier Mobility      | $\mu_n$      | 1360                | cm$^{2}$/V·s    | Nominal electron mobility (constant).    |
 
 ## 3. Analytical Result
 
@@ -55,10 +55,10 @@ R = \frac{L}{q \cdot \mu \cdot N \cdot A}
 $$
 
 
-### 3.2 Example Calculation
+### 3.2. Example Calculation
 Using the parameter values defined above:
 $$
-A = H \cdot D = 10^{-4} \cdot 10^{-4} = 10^{-8} cm^{2}
+A = W \cdot D = 10^{-4} \cdot 10^{-4} = 10^{-8} cm^{2}
 $$
 
 Now substitute into the resistance formula:
@@ -66,20 +66,20 @@ $$
 R = \frac{1.0 \times 10^{-3}}{(1.6 \times 10^{-19}) \cdot 1000 \cdot (1.0 \times 10^{16}) \cdot (1.0 \times 10^{-8})} = \underline{\mathbf{62.5\text{k}\Omega}}
 $$
 
-## 4. Resistor in Aquarius
+## 4. Simulation using Aquarius
 
-### 4.1 Creating the Device Model
+### 4.1. Creating the Device Model
 
-To create a resistor device model in Aquarius, follow the steps below:
+To create a resistor device model in Aquarius, follow the steps below.
 
 #### 4.1.1. Launch the Device Editor
 
 - Open the Aquarius application.
-- On the **Start Page**, three options are available:
-  1. New Device Model
-  2. New Simulation
-  3. Open Results Visualiser
-- Click **New Device Model** (the first option).
+- On the Start Page, three options are available:
+    - New Device Model
+    - New Simulation
+    - Open Results Visualiser
+- Click `New Device Model` (the first option).
 - The **Device Editor** will open with an empty workspace.
 
 <p align="center">
@@ -88,17 +88,23 @@ To create a resistor device model in Aquarius, follow the steps below:
 
 #### 4.1.2. Define the Device Geometry
 
+- In the Menu Bar, select `Define` → `Region` → `Rectangle`.
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/03.png')} />
+</p>
+
+- Position the cursor on the canvas to draw a rectangular shape:
+  - Left-click to start drawing.
+  - Left-click again to finish the shape.
+
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/04.png')} />
 </p>
 
-:::tip
-For more detailed instructions on **defining regions**, click [here](../device-editor/regions#usage-instructions).
-:::
-
 - After drawing the rectangle, the **Exact Coordinates** dialog will open automatically:
   - Set the First Vertex to `(0, 0)`.
-  - Set the Second Vertex to `(10, 1)`.
+  - Set the Second Vertex to `(1, 10)`.
   - Click `OK` to confirm.
 
 <p align="center">
@@ -106,14 +112,18 @@ For more detailed instructions on **defining regions**, click [here](../device-e
 </p>
 
 - The **Region Properties** dialog will then open:
-  - Set the **Region Material** to `Silicon (Si)`; 
+  - Set the Region Material to `Silicon (Si)`; 
     - Note: the default material properties can be used, so the carrier mobility of `1000` does not need to be changed.
-  - Set the **Donor Doping** to `1E+16`.
+  - Set the Donor Doping to `1E+16`.
   - Click `OK` to confirm.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/06.png')} />
 </p>
+
+:::tip
+For more detailed instructions on **defining regions**, click [here](../device-editor/regions#usage-instructions).
+:::
 
 #### 4.1.3. Define the Device Contacts
 
@@ -123,91 +133,75 @@ With the device geometry and material properties defined, the next step is to **
   <img src={useBaseUrl('img/examples/resistor/07.png')} />
 </p>
 
-Define 2 **contacts**, `A` on the left of the device and `B` on the right as can been seen in the image above. 
+Define two contacts, `A` on the top of the device and `B` on the bottom as can been seen in the image above. 
 
-- Define **first** contact:
-  1. From the Menu, select `Define` → `Contact`.
-  2. Using the cursor, hover the cursor over the **left** geometric edge that will make up the contact. When the edge is highlighted in green and the cursor changes to indicate a selectable element, `left-click` to select the edge.
-  3. Next `right-click` anywhere to open the properties dialog for the contact.  Use this dialog to set the contact's properties.
-  4. In the **General** section of the **Contact Properties** window, set the **Name** to `A` and the **Colour** to `red` (note: Leave the colour as red if it is already red)
-  5. Leave all of the other **contact properties** as the `default` values. 
-  6. Click `OK`.
+- Define the first contact (A):
+  1. From the menu, select `Define` → `Contact`.
+  2. Move the cursor over the left geometric edge. When the edge highlights in green and the cursor changes to indicate a selectable element, `Left-click` to select it.
+  3. `Right-click` anywhere to open the Contact Properties dialog. Use this dialog to set the contact's properties.
+  4. In the General section, set `Name` to **A**, leave all other properties at their default values.
+  5. Click `OK`.
 
-- Define **second** contact. Follow steps **1-6** above, but instead:
-  1. Select the **right** geometric edge.
-  2. In the **Contact Properties** window, set the **Name** to `B` and the **Colour** to `green`.
-  3. Click `OK`.
+- Define the second contact (B), repeat steps 1–5 above, but instead:
+  1. Select the bottom geometric edge.
+  1. In the Contact Properties window, set `Name` to **B** and `Colour` to **green**.
+  1. Click `OK`.
 
 :::tip
 For more detailed instructions on defining contacts, click [here](../device-editor/contacts#usage-instructions).
 :::
 
-#### 4.1.4. Define the Finite Element Mesh
+#### 4.1.4. Define the Mesh Construction Lines
+An initial grid is defined by specifying a set of vertical and horizontal lines. Anywhere these lines intersect with each other or with a region boundary, a point is inserted into the mesh.
 
-For a simple resistor with uniform material properties and no junctions, a **coarse mesh** is sufficient. It provides a good balance between **simulation accuracy** and **computational efficiency**, avoiding unnecessary refinement that would increase computation time without significant benefit.
+For a simple resistor with uniform material properties and no junctions, a coarse mesh is sufficient. It provides a good balance between simulation accuracy and computational efficiency. Since the resistor is uniform along the x-direction (its properties do not change with x), we only need to define horizontal grid lines.
 
-Define the **Mesh Construction Grid:** 
-- In the menu toolbar at the top select: `Mesh` → `Define Mesh Construction Grid`.
+- In the menu Menu Bar select `Mesh` → `Define Mesh Construction Grid`. The **Mesh Construction Grid** window will open.
+
+- In the **Mesh Construction Grid** window click `Add`.
+- The **Mesh Grid Lines** window will open. Set the below properties: 
+  - Set the **Orientation** to `Horizontal`.
+  - Set the **Interval** to `Fixed`.
+  - Set the **Coordinates** of the box that will contain the mesh line to:
+    - `X1 = 0`
+    - `X2 = 1`
+    - `Y1 = 0`
+    - `Y2 = 10`
+  - Set the **Spacing Between Lines** to `1.0` microns.
+- Click `OK`
+
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/08.png')} />
 </p>
-
-- Firstly **vertical** grid lines will be added. 
-  - In the **Mesh Construction Grid** window click `Add`.
-  - The **Mesh Grid Lines** window will open. Set the below properties: 
-    - Set the **Orientation** to `Vertical`.
-    - Set the **Interval** to `Fixed`.
-    - Set the **Coordinates** of the box that will contain the mesh line to:
-      - `X1 = 0`
-      - `X2 = 10`
-      - `Y1 = 1`
-      - `Y2 = 0`
-    - Set the **Spacing Between Lines** to `1.0` microns.
-  - Click `OK`
-- The grid lines will be set as in the image below:  
-
-<p align="center">
-  <img src={useBaseUrl('img/examples/resistor/19.png')} />
-</p>
-
-- Next the **horizontal** grid lines will be added.
-  - In the **Mesh Construction Grid** window click `Add` again.
-  - Set the properties to the same values as above but change the **Orientation** to `Horizontal`.
-- The Horizontal grid lines will be added.
-- click `x` in the top right corner to close the **Mesh Construction Grid** window.
 
 :::tip
 For more detailed instructions on **defining the mesh construction grid**, click [here](../device-editor/finite-element-mesh/meshing-grid.md#usage-instructions).
 :::
 
-<p align="center">
-  <img src={useBaseUrl('img/examples/resistor/9.png')} />
-</p>
-
-Generate the **Finite Element Mesh:**
+#### 4.1.5. Generating the Finite Element Mesh
 - In the Menu Bar, select `Mesh` → `Generate Finite Element Mesh Model`. The **Mesh Properties** window will open.
 - No refinement is required for this model, so click `OK` to generate the mesh with default settings.
-
-:::tip
-For more detailed instructions on **generating the finite element mesh**, click [here](../device-editor/finite-element-mesh/mesh-generation.md#usage-instructions).
-:::
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/10.png')} />
 </p>
 
-#### 4.1.5. Save the Device Model
+:::tip
+For more detailed instructions on **generating the finite element mesh**, click [here](../device-editor/finite-element-mesh/mesh-generation.md#usage-instructions).
+:::
+
+#### 4.1.6. Save the Device Model
 
 - In the Menu Bar, select `File` → `Save As...`. The Save dialog will open.
 - Navigate to the folder you wish to save the device in.
-- Specify the filename (e.g. Resistor.sol).
+- Specify the filename (e.g. *resistor.sdm*).
 - Click `Save` to store the device model.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/11.png')} />
 </p>
 
-### 4.2 Steady State Simulation
+### 4.2. Steady State Simulation
 
 Next the resistor will be used in a simple steady state example.
 
@@ -218,20 +212,21 @@ Next the resistor will be used in a simple steady state example.
   <img src={useBaseUrl('img/examples/resistor/12.png')} />
 </p>
 
-#### 4.2.1 Create Circuit
+#### 4.2.1. Simulation Setup
 
-The circuit must be designed before simulation can begin.
+A circuit must be designed before simulation can begin. A device (the resistor), a DC Voltage Source and a Ground will be added to the circuit editor and connected together.
 
-A **device** (the resistor), a **DC Voltage Source** and a **Ground** will be added to the circuit editor and connected together.
-
-##### 4.2.1.1 Add Device
+##### 4.2.1.1. Add the Device
 
 - Select the **Device**<img src={useBaseUrl('img/icons/device.png')} width="30" alt="Device Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar and drag and drop it onto the circuit editor.
 - Set the device Properties:
   - Click `Get .sdm File`, select the device file that you created in the previous steps and click `OK`.
   -  Ensure **Scaling Factor (cm)** is set to `0.0001`. Which sets the device depth to 1$\mu$m depth.
-  - Click `OK` to close the **Device Properties**.
-- **Note:** The device can be rotated by `left clicking` on it to select it and then using `ctrl + r` to rotate it by $90^\circ$.
+  - Click `OK` to close the Device Properties.
+
+:::note
+**Note:** The device can be rotated by `Left-clicking` on it to select it and then using `CTRL + R` to rotate it by $90^\circ$.
+:::
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/13.png')} />
@@ -241,11 +236,11 @@ A **device** (the resistor), a **DC Voltage Source** and a **Ground** will be ad
 For more detailed instructions on **Adding Components**, click [here](../circuit-simulator/basics/adding-components.md).
 :::
 
-##### 4.2.1.2 Add Source & Ground
+##### 4.2.1.2. Add a Source and Ground
 
-- Select the **DC Voltage Source**<img src={useBaseUrl('img/icons/dcVoltageSource.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `dragging and droping` it onto the circuit editor.
-- Select the **Ground**<img src={useBaseUrl('img/icons/ground.png')} width="20" alt="Ground Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `dragging and droping` it onto the circuit editor.
-- **Connect** the components togeter as they are in the image below.
+- Select the **DC Voltage Source**<img src={useBaseUrl('img/icons/dcVoltageSource.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `Dragging and Dropping` it onto the circuit editor.
+- Select the **Ground**<img src={useBaseUrl('img/icons/ground.png')} width="20" alt="Ground Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} /> from the tool bar by `Dragging and Dropping` it onto the circuit editor.
+- Connect the components together as they are in the image below.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/14.png')} />
@@ -255,9 +250,8 @@ For more detailed instructions on **Adding Components**, click [here](../circuit
 For more detailed instructions on **Wiring Circuits**, click [here](../circuit-simulator/basics/wiring-circuits.md).
 :::
 
-##### 4.2.1.3 Set Source Properties
-
-- `Double click` on the **DC Voltage Source** to open its **properties**.
+##### 4.2.1.3. Set Source Properties
+- `Double-click` on the **DC Voltage Source** to open its properties.
 - Click `Add Range` to open the **Add Range Properties** and set to the values below:
   - `Start Voltage (V) = 0`
   - `End Voltage (V) = 100`
@@ -273,41 +267,45 @@ For more detailed instructions on **Wiring Circuits**, click [here](../circuit-s
 For more detailed instructions on **Steady State (DC) Sources**, click [here](../circuit-simulator/sources/steady-state.md).
 :::
 
-- **Save** the simulation at this point. The circuit will be saved in a `.sol` solution file format.  
+##### 4.2.1.4. Save the Solution File
+Save the simulation at this point. 
+- In the Menu Bar, select `File` → `Save As...`. The Save dialog will open.
+- Navigate to the folder you wish to save the solution file.
+- Specify the filename (e.g. *resistor_iv.sol*).
+- Click `Save` to store the solution file.
 
 #### 4.2.2 Run Simulation
 
 To run the Steady State Simulation press the blue run button<img src={useBaseUrl('img/icons/steadyStateSimulation.png')} width="20" alt="DC Voltage Source Icon" style={{ verticalAlign: 'middle', marginLeft: '4px' }} />, alternatively in the menu use `Simulation` → `Steady State`.
 
-*Note: If the file has not been saved yet, there will be a prompt at this point to save before the simulation can run.*
-
 :::tip
 For more detailed instructions on **Running a Simulations**, click [here](../circuit-simulator/basics/running-a-simulation.md).
 :::
 
-The simulation will begin and the **Simulation Status** will appear on the screen. Wait until the simultion has completed at which point **Simulation Stopped** will apear in the bottom left of the status window and the text *Aquarius simulator completed execution* will be show in the screen.
-
-:::tip
-For more detailed instructions on the **Simulation Status** output, click [here](../circuit-simulator/basics/running-a-simulation.md).
-:::
+The simulation will begin and the **Simulation Status** will appear on the screen. Wait until the simulation has completed at which point **Simulation Stopped** will appear in the bottom left of the status window and the text "*Aquarius simulator completed execution.*" will be show in the screen.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/16.png')} />
 </p>
 
-#### 4.2.2 Visualise outputs
+:::tip
+For more detailed instructions on the **Simulation Status** output, click [here](../circuit-simulator/basics/running-a-simulation.md).
+:::
+
+### 4.3. Simulation Results
+#### 4.3.1. Visualising the Results
 
 Next results visualiser will be used to understand the output of the simulation.
 
-- On the **Start Page** Click **Open Results Visualiser** (the third option).
-- The **Results Visualiser** will ask the user to select a `.res` results file. 
+- On theStart Page Click `Open Results Visualiser` (the third option).
+- The application will ask the user to select a `.res` results file.
+  - The name of the `.res` file will be the same as the `.sol` which has just run (e.g. *resistor_iv.res*).
 - Then the **Results Visualiser** will open with the selected results file loaded.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/17.png')} />
 </p>
 
-The **resistance** was earlier calculated and is expected to be: $$R = 62.5k\,\Omega$$, therfore, a linear relationship between the voltage and current is expected.
 - Click `External Plot` at the top of the results visualiser.
 - Set **External Plot Settings**:
   - The file should match your results file name.
@@ -322,11 +320,17 @@ The **resistance** was earlier calculated and is expected to be: $$R = 62.5k\,\O
   <img src={useBaseUrl('img/examples/resistor/18.png')} />
 </p>
 
-Using simple Ohm's law the expected current $I$ through the device at a voltage $V$ can be calculated
+#### 4.4.2. Analysing the Results
+
+Using Ohm's law the resistance $R$ through the device at a given voltage $V$ and current $I$ can be calculated. Taking the data point at 100V.
+
 $$
-I = \frac{V}{R} = \frac{100V}{62.5k\,\Omega} = \frac{100}{62.5 \times 10^{3}} = 1.6mA
+R = \frac{V}{I} = \frac{100V}{1.6mA} = \frac{100}{1.6 \times 10^{-3}} = 62.5k\Omega
 $$
 
-It can be seen on the plot that the **Total Current** at **100V** is approimatley $$1.6mA$$ as expected.
+This matches the previously calculated resistance of $$62.5k\Omega$$, therefore the analytical model matches the TCAD simulation.
 
 This concludes the Resistor example tutorial.
+
+## 5. Conclusion
+This example demonstrated how to model and simulate a simple uniformly doped silicon resistor in the Aquarius TCAD environment. The analytical resistance, derived from fundamental semiconductor relations, was shown to match the simulated result within numerical accuracy. This validates both the device modelling workflow and the simulator’s accuracy, while also serving as a clear instructional case for users learning to set up and analyse basic passive devices.

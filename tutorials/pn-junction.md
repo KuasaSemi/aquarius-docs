@@ -153,13 +153,13 @@ Associated device properties can be modified by **double clicking** on the icon.
   <img src="/img/tutorial-extras/pn-junction/image27.png"/>
 </p>
 
-2. Connect the components using wires. To connect by wires, hover over one of the white circular component contacts, at which point the cursor will change to a cross and then left click to connect the contact. Use **Spacebar** to swap between the wire's orientation. 
+2. Connect the components using wires. To connect by wires, hover over one of the white circular component contacts, at which point the cursor will change to a cross and then `Left-click` to connect the contact. Use the space bar to swap between the wire's orientation. 
 
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image28.png"/>
 </p>
 
-3. Ground is used as the reference voltage> This placed by click and hols followed by dragging into the circuit. connect it with a wire.
+3. Ground is used as the reference voltage. This placed by click and hold followed by dragging into the circuit. connect it with a wire.
 <p align="center">
   <img src="/img/tutorial-extras/pn-junction/image31.png"/>
 </p>
