@@ -12,9 +12,8 @@ In this example project, a simple uniformly doped n-type silicon resistor is mod
 ## 2. Parameters
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/resistor/01.png')} height="600"/>
+  <img src={useBaseUrl('img/examples/resistor/01.png')} style={{maxWidth: "200px", height: "auto"}}/>
 </p>
-
 
 | Parameter             | Symbol       | Value               | Unit            | Description                              |
 |-----------------------|--------------|---------------------|-----------------|------------------------------------------|
