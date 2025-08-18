@@ -88,7 +88,15 @@ To create a resistor device model in Aquarius, follow the steps below.
 
 #### 4.1.2. Define the Device Geometry
 
-Missing text here...
+- In the Menu Bar, select `Define` → `Region` → `Rectangle`.
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/03.png')} />
+</p>
+
+- Position the cursor on the canvas to draw a rectangular shape:
+  - Left-click to start drawing.
+  - Left-click again to finish the shape.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/04.png')} />
