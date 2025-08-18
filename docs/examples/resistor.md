@@ -12,17 +12,17 @@ In this example project, a simple uniformly doped n-type silicon resistor is mod
 ## 2. Parameters
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/resistor/01.png')} width="600"/>
+  <img src={useBaseUrl('img/examples/resistor/01.png')} height="600"/>
 </p>
 
 
 | Parameter             | Symbol       | Value               | Unit            | Description                              |
 |-----------------------|--------------|---------------------|-----------------|------------------------------------------|
 | Length                | $L$          | $1 \times 10^{-3}$  | cm              | Distance between the two contacts.       |
-| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor.                   |
-| Height                | $H$          | $1 \times 10^{-4}$  | cm              | Vertical thickness of the resistor.      |
+| Width                 | $W$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor.                   |
+| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Vertical thickness of the resistor.      |
 | Doping Concentration  | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
-| Carrier Mobility      | $\mu_n$      | 1360                | cm$^{2}$ /V·s   | Nominal electron mobility (constant).    |
+| Carrier Mobility      | $\mu_n$      | 1360                | cm$^{2}$/V·s    | Nominal electron mobility (constant).    |
 
 ## 3. Analytical Result
 
@@ -58,7 +58,7 @@ $$
 ### 3.2. Example Calculation
 Using the parameter values defined above:
 $$
-A = H \cdot D = 10^{-4} \cdot 10^{-4} = 10^{-8} cm^{2}
+A = W \cdot D = 10^{-4} \cdot 10^{-4} = 10^{-8} cm^{2}
 $$
 
 Now substitute into the resistance formula:
@@ -104,7 +104,7 @@ To create a resistor device model in Aquarius, follow the steps below.
 
 - After drawing the rectangle, the **Exact Coordinates** dialog will open automatically:
   - Set the First Vertex to `(0, 0)`.
-  - Set the Second Vertex to `(10, 1)`.
+  - Set the Second Vertex to `(1, 10)`.
   - Click `OK` to confirm.
 
 <p align="center">
@@ -157,9 +157,6 @@ An initial grid is defined by specifying a set of vertical and horizontal lines.
 For a simple resistor with uniform material properties and no junctions, a coarse mesh is sufficient. It provides a good balance between simulation accuracy and computational efficiency. Since the resistor is uniform along the x-direction (its properties do not change with x), we only need to define horizontal grid lines.
 
 - In the menu Menu Bar select `Mesh` → `Define Mesh Construction Grid`. The **Mesh Construction Grid** window will open.
-<p align="center">
-  <img src={useBaseUrl('img/examples/resistor/08.png')} />
-</p>
 
 - In the **Mesh Construction Grid** window click `Add`.
 - The **Mesh Grid Lines** window will open. Set the below properties: 
@@ -172,6 +169,10 @@ For a simple resistor with uniform material properties and no junctions, a coars
     - `Y2 = 10`
   - Set the **Spacing Between Lines** to `1.0` microns.
 - Click `OK`
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/resistor/08.png')} />
+</p>
 
 :::tip
 For more detailed instructions on **defining the mesh construction grid**, click [here](../device-editor/finite-element-mesh/meshing-grid.md#usage-instructions).
