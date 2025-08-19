@@ -319,7 +319,7 @@ Next results visualiser will be used to understand the output of the simulation.
   <img src={useBaseUrl('img/examples/resistor/18.png')} />
 </p>
 
-#### 4.4.2. Analysing the Results
+#### 4.3.2. Analysing the Results
 
 Using Ohm's law the resistance $R$ through the device at a given voltage $V$ and current $I$ can be calculated. Taking the data point at 100V.
 
