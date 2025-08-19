@@ -3,8 +3,7 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Aquarius Docs',
   favicon: 'img/favicon.ico',
   url: 'https://kuasasemi.github.io', // GitHub Pages base URL
   baseUrl: '/aquarius-docs/',         // Use your repo name here
@@ -15,7 +14,6 @@ const config = {
   themeConfig: {
     navbar: {
       logo: {
-        alt: 'Docusaurus Logo',
         src: 'img/logo/kuasasemi-logo-light.png',
         srcDark: 'img/logo/kuasasemi-logo-dark.png',
       },
