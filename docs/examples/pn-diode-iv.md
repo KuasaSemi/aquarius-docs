@@ -15,16 +15,21 @@ The analytical model provides a baseline for expected diode behaviour, including
 
 ## 2. Parameters
 
+<p align="center">
+  <img src={useBaseUrl('img/examples/pn_diode/01.png')} style={{maxWidth: "200px", height: "auto"}}/>
+</p>
+
 **More parameters need be added here...**
+
 
 | Parameter             | Symbol       | Value               | Unit            | Description                              |
 |-----------------------|--------------|---------------------|-----------------|------------------------------------------|
-| Length                | $L$          | $2 \times 10^{-4}$  | cm              | Distance between the two contacts.       |
+| Length                | $L1$         | $1 \times 10^{-4}$  | cm              | P region length.                         |
+| Length                | $L2$         | $1 \times 10^{-4}$  | cm              | N region length.                         |
 | Width                 | $W$          | $2 \times 10^{-5}$  | cm              | Depth of the device.                     |
 | Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Z dimension thickness of the device.     |
-| Donor Doing           | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
-| Acceptor Doing        | $N_DA$       | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform acceptor concentration.          |
-| Doping Concentration  | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
+| Acceptor Doing        | $N_A$        | $1 \times 10^{-16}$ | cm$^{-3}$       | P region acceptor concentration.         |
+| Donor Doing           | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | N region donor concentration.            |
 
 
 
