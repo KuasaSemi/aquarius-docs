@@ -17,7 +17,7 @@ All new features and major bug fixes are listed.
 
 ###### Bug Fixes:
 - Transient Voltage and current source bugs fixed.
-- Y-axis Labels improved in visuliser plots.
+- Y-axis Labels improved in visualiser plots.
 - Capacitance bug fixed for capacitor component.
 
 ### 0.1.23
@@ -69,7 +69,7 @@ All new features and major bug fixes are listed.
 ##### Bug Fixes:
 - Fixed issue with net names not saving correctly.
 - Fixed contour plot, so that new colour bar does not appear when a new plot is created.
-- Fixed error in boundary conditions for heterojunctions.
+- Fixed error in boundary conditions for hetero-junctions.
 - Fixed solver output formatting for DC Simulations with Bias Points > 9999.
 
 ### 0.1.18
@@ -106,7 +106,7 @@ All new features and major bug fixes are listed.
 
 ##### New Features:
 - Plot variable no longer resets when plotting Energy Band Diagram
-- The solver output window is now re-sizable
+- The solver output window is now re-sizeable
 
 ### 0.1.13
 
@@ -129,7 +129,7 @@ All new features and major bug fixes are listed.
 ### 0.1.11
 
 ##### New Features:
-- 8byte (double precision) and 16byte (quadruple precision) solver variants now availble.
+- 8byte (double precision) and 16byte (quadruple precision) solver variants now available.
 - The default case file output type changed to binary to reduce file size.
 
 ### 0.1.10
@@ -190,7 +190,7 @@ All new features and major bug fixes are listed.
 - Added button to Device Editor tool bar to allow the user to pan across the device using the cursor and left mouse button.
 
 ##### Bug Fixes:
-- Added a check to see if Aquarius is running and prompting the user to shutdown the app before unistalling.
+- Added a check to see if Aquarius is running and prompting the user to shutdown the app before uninstalling.
 - Fixed bug which was making regions 'unclick-able'.
 - Fixing net name definition bugs
 
