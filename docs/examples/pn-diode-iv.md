@@ -16,7 +16,7 @@ The analytical model provides a baseline for expected diode behaviour, including
 ## 2. Parameters
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn_diode/01.png')} style={{maxWidth: "200px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/01.png')} style={{maxWidth: "200px", height: "auto"}}/>
 </p>
 
 **More parameters need be added here...**
