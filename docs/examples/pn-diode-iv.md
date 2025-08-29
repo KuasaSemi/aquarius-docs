@@ -22,16 +22,19 @@ The analytical model provides a baseline for expected diode behaviour, including
 **More parameters need be added here...**
 
 
-| Parameter             | Symbol       | Value               | Unit            | Description                              |
-|-----------------------|--------------|---------------------|-----------------|------------------------------------------|
-| Length                | $L1$         | $1 \times 10^{-4}$  | cm              | P region length.                         |
-| Length                | $L2$         | $1 \times 10^{-4}$  | cm              | N region length.                         |
-| Width                 | $W$          | $2 \times 10^{-5}$  | cm              | Depth of the device.                     |
-| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Z dimension thickness of the device.     |
-| Acceptor Doing        | $N_A$        | $1 \times 10^{-16}$ | cm$^{-3}$       | P region acceptor concentration.         |
-| Donor Doing           | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | N region donor concentration.            |
-
-
+| Parameter                          | Symbol       | Value               | Unit       | Description                                                       |
+|------------------------------------|--------------|---------------------|------------|-------------------------------------------------------------------|
+| Length                             | $L1$         | $1 \times 10^{-4}$  | cm         | P region length.                                                  |
+| Length                             | $L2$         | $1 \times 10^{-4}$  | cm         | N region length.                                                  |
+| Width                              | $W$          | $2 \times 10^{-5}$  | cm         | Depth of the device.                                              |
+| Depth                              | $D$          | $1 \times 10^{-4}$  | cm         | Z dimension thickness of the device.                              |
+| Acceptor Doping                    | $N_A$        | $1 \times 10^{-16}$ | cm$^{-3}$  | P region acceptor concentration.                                  |
+| Donor Doping                       | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$  | N region donor concentration.                                     |
+| Temperature                        | $T$          | $300$               | K          | Temperature of the diode.                                         |
+| Electron Minority Carrier Lifetime | $tau_n$      | $1 \times 10^{-5}$  | s          | Mean time electron travels in P region until rejoining with hole. |
+| Hole Minority Carrier Lifetime     | $tau_p$      | $1 \times 10^{-5}$  | s          | Mean time hole travels in N region until rejoining with electron. |
+| Electron Mobility                  | $mu_n$       | 1000                | cm$^{2}$/Vs| How easily Electrons move due to an electric field.               |
+| Hole Mobility                      | $mu_p$       | 450                 | cm$^{2}$/Vs| How easily holes move due to an electric field.                   |
 
 
 ## 3. Analytical Model
@@ -59,8 +62,10 @@ In forward bias ($V>0$), the current rises exponentially with voltage. In revers
 
 The reverse saturation current arises from minority carrier diffusion across the junction and is given by:  
 
+- Using the above parameters, the saturation current was calculated to approximately be:
+
 $$
-I_s = q A \left( \frac{D_p n_i^2}{L_p N_D} + \frac{D_n n_i^2}{L_n N_A} \right)
+I_s = q A \left( \frac{D_p n_i^2}{L_p N_D} + \frac{D_n n_i^2}{L_n N_A} \right) = 7.752 \times 10^{-19} A
 $$
 
 Where:
@@ -73,24 +78,35 @@ Where:
 - $N_A$ = Acceptor concentration (cm⁻³)
 - $N_D$ = Donor concentration (cm⁻³)
 - $n_i$ = Intrinsic carrier concentration (cm⁻³)
-- $T$ = Absolute temperature (K)
+- $T$   = Absolute temperature (K)
 
 ---
 
 $D_p$ and $D_n$ are related to carrier mobilities:  
 
 $$
-D = \mu \frac{kT}{q}
+D = \mu \frac{kT}{q} 
+
+D_p = 11.633399903895992
+D_n = 25.851999786435535
+
 $$
 
 
 $L = \sqrt{D \tau}$, where $\tau$ is the minority carrier lifetime.
 
+$L_p$ = 0.00010785823985164969
+$L_n$ = 0.00016078557082784367
+
+The values for $D_p$, $D_n$, $tau_p$ and $tau_n$ were substituted into the saturation current equation to calculate the given value.
+
 ---
 
 A simple analytical model for the ideal PN diode was implemented in Python using the above equations. The resulting current–voltage characteristic is shown below. In later sections, this analytical result will be compared with TCAD simulation output to verify consistency between the theoretical model and device-level simulation.
 
-**Insert image here...**
+<p align="center">
+  <img src={useBaseUrl('img/examples/pn-diode/03-shockley-python-plot.png')}/>
+</p>
 
 ## 4. Simulation using Aquarius
 
@@ -120,7 +136,7 @@ To create a resistor device model in Aquarius, follow the steps below.
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/p-region/02.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/p-region/02.png')}/>
 </p>
 
 
@@ -134,7 +150,7 @@ To create a resistor device model in Aquarius, follow the steps below.
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/p-region/03.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/p-region/03.png')}/>
 </p>
 
 
@@ -149,7 +165,7 @@ To create a resistor device model in Aquarius, follow the steps below.
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/p-region/04.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/p-region/04.png')}/>
 </p>
 
 - Repeat process again but changing the colour of the region and this time with the following parameters:
@@ -166,7 +182,7 @@ To create a resistor device model in Aquarius, follow the steps below.
 			-	Note: the two regions should be neatly on top of each other.
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/n-region/07.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/n-region/07.png')}/>
 </p>
 
 
@@ -177,7 +193,7 @@ To create a resistor device model in Aquarius, follow the steps below.
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/def-contacts/05-image-of-contacts2.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/def-contacts/05-image-of-contacts2.png')}/>
 </p>
 
 
@@ -221,7 +237,7 @@ As it was done in the simple resistor example, an initial grid is defined. Here 
 		- Click `OK`
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/def-mesh/06-all-grid-spacing-values.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/def-mesh/06-all-grid-spacing-values.png')}/>
 </p>
 
 
@@ -236,14 +252,14 @@ Considering the equations shown in the parameters section, variables need to be 
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/set-mu-tau/01-material-library.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/set-mu-tau/01-material-library.png')}/>
 </p>
 
 
 - Select the material you wish to use, here select `Si` (silicon). On the right-hand side of the **Material Library** window, select `Edit Material`, the **Si Material Properties** window will open. 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/set-mu-tau/02-select-material.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/set-mu-tau/02-select-material.png')}/>
 </p>
 
 First, we will change the value for **carrier mobility**:
@@ -255,7 +271,7 @@ First, we will change the value for **carrier mobility**:
 - Repeat the same process for **Mu_0_n** but set the value to `1000` cm2/Vs. This will change the charge mobility for the electrons.
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/set-mu-tau/03--mu-n--mu-p--values--set.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/set-mu-tau/03--mu-n--mu-p--values--set.png')}/>
 </p>
 
 
@@ -280,7 +296,7 @@ We will now use the diode in a simple steady state example as was done for the R
 •	Follow the same steps as in section 4.2.1 in the Resistor example for the device created in this example.
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/circuit-simulation/03-select-sdm-file.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/circuit-simulation/03-select-sdm-file.png')}/>
 </p>
 
 
@@ -291,7 +307,7 @@ We will now use the diode in a simple steady state example as was done for the R
 	- `Step (V) = 0.002`
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/circuit-simulation/05-set-voltage-range.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/circuit-simulation/05-set-voltage-range.png')}/>
 </p>
 
 - The simulated circuit should look similar to the one In the **Resistor 
@@ -299,7 +315,7 @@ Example**:
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/circuit-simulation/04-circuit.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/circuit-simulation/04-circuit.png')}/>
 </p>
 
 - Next run the simulation as in section 4.2.2 of the Resistor, the simulation may take slightly longer since there are more voltage steps.
@@ -317,7 +333,7 @@ Example**:
 
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/plot-generation/02-IV-Graph.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/plot-generation/02-IV-Graph.png')}/>
 </p>
 
 
@@ -329,7 +345,7 @@ Example**:
 This example displays how a PN junction diode that is uniformly doped in the P and N region respectively can be modelled and simulated in the Aquarius TCAD environment. The current-voltage graph can be verified from the analytical model bellow:
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/pn-diode/02-python-plot3.png')} style={{maxWidth: "900px", height: "auto"}}/>
+  <img src={useBaseUrl('img/examples/pn-diode/02-python-plot3.png')}/>
 </p>
 
 
