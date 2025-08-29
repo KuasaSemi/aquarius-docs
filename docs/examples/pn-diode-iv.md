@@ -87,9 +87,9 @@ $D_p$ and $D_n$ are related to carrier mobilities:
 $$
 D = \mu \frac{kT}{q} 
 
-D_p = 11.633399903895992 
+D_p = 11.633399903895992 cm$^{-3}$/s
 
-D_n = 25.851999786435535
+D_n = 25.851999786435535 cm$^{-3}$/s
 
 $$
 
