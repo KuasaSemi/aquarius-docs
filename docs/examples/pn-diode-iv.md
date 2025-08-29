@@ -86,19 +86,20 @@ $D_p$ and $D_n$ are related to carrier mobilities:
 
 $$
 D = \mu \frac{kT}{q} 
-
-D_p = 11.633399903895992 cm$^{-3}$/s
-
-D_n = 25.851999786435535 cm$^{-3}$/s
-
 $$
+
+D_p = 11.63339990 cm$^{-3}$/s
+
+D_n = 25.85199978 cm$^{-3}$/s
+
+
 
 
 $L = \sqrt{D \tau}$, where $\tau$ is the minority carrier lifetime.
 
-$L_p$ = 0.00010785823985164969 cm
+$L_p$ = 0.00010789 cm
 
-$L_n$ = 0.00016078557082784367 cm
+$L_n$ = 0.00016079 cm
 
 The values for $D_p$, $D_n$, $tau_p$ and $tau_n$ were substituted into the saturation current equation to calculate the given value.
 
