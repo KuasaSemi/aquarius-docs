@@ -61,3 +61,23 @@ table {
 .navbar {
   min-height: 70px !important; /* Adjust navbar height */
 }
+
+
+/* Five-column spec tables (Parameter | Symbol | Value | Unit | Description) */
+.spec-table table {
+  width: 100%;
+  table-layout: fixed;        /* crucial: enforces the widths below */
+}
+
+.spec-table th, 
+.spec-table td {
+  overflow-wrap: anywhere;    /* prevents long math/units from overflowing */
+  white-space: normal;
+}
+
+/* Column widths */
+.spec-table th:nth-child(1), .spec-table td:nth-child(1) { width: 22%; } /* Parameter */
+.spec-table th:nth-child(2), .spec-table td:nth-child(2) { width: 10%; } /* Symbol */
+.spec-table th:nth-child(3), .spec-table td:nth-child(3) { width: 15%; } /* Value */
+.spec-table th:nth-child(4), .spec-table td:nth-child(4) { width: 10%; } /* Unit */
+.spec-table th:nth-child(5), .spec-table td:nth-child(5) { width: 45%; } /* Description */
