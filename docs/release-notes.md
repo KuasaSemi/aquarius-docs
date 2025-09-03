@@ -8,6 +8,20 @@ Below lists the changes to each version of Aquarius.
 Not all bug fixes are listed as many minor bugs are fixed each release.
 All new features and major bug fixes are listed.
 
+### 0.1.25
+
+##### New Features:
+- In the Results Visualizer Case numbers now display time in seconds for transient simulations.
+
+###### Bug Fixes:
+- PWL preview graph now updates correctly when values change.
+- Fixed crash when opening the Visualiser from the Device Editor.
+- Labels display correctly in the PWL waveform properties window.
+- Triangular waveform preview now matches simulator output.
+- .res files now correctly write values with 3-digit exponents.
+- Fixed DC current source pins orientation.
+- Updated .res file reader to correctly parse 3-digit exponents.
+
 ### 0.1.24
 
 ##### New Features:
