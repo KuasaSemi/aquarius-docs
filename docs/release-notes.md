@@ -8,6 +8,8 @@ Below lists the changes to each version of Aquarius.
 Not all bug fixes are listed as many minor bugs are fixed each release.
 All new features and major bug fixes are listed.
 
+### 0.1.26
+
 ##### New Features:
 - Results Visualiser now allows users to specify custom plot titles and axis labels.
 - Models updated to include support for the Okuto–Crowell impact ionisation model.
