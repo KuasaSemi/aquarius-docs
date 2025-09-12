@@ -47,3 +47,7 @@ To define a mesh window:
 | `Mesh Size Hint` | The approximate size of mesh elements within this window.                        | Microns    |
 
 </div>
+
+## Device View
+
+Whether mesh windows are shown in the main device view can be toggled via the top menu by selecting View -> Windows -> Mesh.
