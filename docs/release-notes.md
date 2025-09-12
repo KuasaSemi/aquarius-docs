@@ -8,6 +8,15 @@ Below lists the changes to each version of Aquarius.
 Not all bug fixes are listed as many minor bugs are fixed each release.
 All new features and major bug fixes are listed.
 
+##### New Features:
+- Results Visualiser now allows users to specify custom plot titles and axis labels.
+- Models updated to include support for the Okuto–Crowell impact ionisation model.
+- Added legends to External and Transient plot types.
+- SRH window parameters now use Top and Bottom instead of Top and Depth for clearer configuration.
+
+###### Bug Fixes:
+- Fixed issue with non-uniform doping being applied to invalid nodes.
+
 ### 0.1.25
 
 ##### New Features:
