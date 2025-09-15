@@ -151,12 +151,12 @@ where:
 
 | Symbol | Description | Units | Property (holes) | Property (electrons) |
 |--------|-------------|-------|------------------|----------------------|
-| $a$  | Pre-exponential factor | cm⁻¹ | `a_oc_p` | `a_oc_n` |
-| $b$  | Field scaling parameter | V/cm | `b_oc_p` | `b_oc_n` |
-| $c$  | Temperature coefficient (prefactor) | 1/K | `c_oc_p` | `c_oc_n` |
-| $d$  | Temperature coefficient (field scaling) | 1/K | `d_oc_p` | `d_oc_n` |
-| $m$  | Exponent in exponential term | – | `m_oc_p` | `m_oc_n` |
-| $n$  | Field-power exponent | – | `n_oc_p` | `n_oc_n` |
+| $a$  | Pre-exponential factor | cm⁻¹ | `OC_a_p` | `OC_a_n` |
+| $b$  | Field scaling parameter | V/cm | `OC_b_p` | `OC_b_n` |
+| $c$  | Temperature coefficient (prefactor) | 1/K | `OC_c_p` | `OC_c_n` |
+| $d$  | Temperature coefficient (field scaling) | 1/K | `OC_d_p` | `OC_d_n` |
+| $m$  | Exponent in exponential term | – | `OC_m_p` | `OC_m_n` |
+| $n$  | Field-power exponent | – | `OC_n_p` | `OC_n_n` |
 | $F$  | Electric field | V/cm | – | – |
 | $T$  | Lattice temperature | K | – | – |
 
