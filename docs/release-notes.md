@@ -8,11 +8,6 @@ Below lists the changes to each version of Aquarius.
 Not all bug fixes are listed as many minor bugs are fixed each release.
 All new features and major bug fixes are listed.
 
-### 0.1.27.0
-
-###### Bug Fixes:
-- Fixed issue with device temperature inverse effect on gate threshold voltage.
-
 ### 0.1.26.0
 
 ##### New Features:
