@@ -49,7 +49,7 @@ Note: If the high-field model is selected, the low-field mobility model will fee
 
 ### High Field Mobility
 Users can set high field mobility as none, e_field or j_field.
-The e_field or j_field models are used to select the high-field mobility model, which can be based on either the electric field magnitude or the magnitude of the field in the direction of the current.
+The `e_field` or `j_field` models are used to select the high-field mobility model, which can be based on either the electric field magnitude or the magnitude of the field in the direction of the current.
 
 ### High Field Calculation
 Users can set as edge or element. 
@@ -100,13 +100,59 @@ Used to select surface mobility along oxide semiconductor interfaces. This model
 </div>
 
 ### Impact Ionisation
-Users can set this option to **Off**, **Edge**, or **Element**, but only one can be selected at a time.
+There are two models for available impact ionisation, **Chynoweth** and **Okuto-Crowell**.
+
+Users can set these option to **Off**, **II_edge**, **II_elem**, **OC_edge**, **OC_elem** but only one can be selected at any time.
 
 <div class="properties-table">
 
 | Name      | Description                                                                 | Unit |
 |-----------|-----------------------------------------------------------------------------|------|
-| `II_elem` | Selects the impact-ionisation model using full elemental discretisation. Options: [On, Off] | - |
-| `II_edge` | Selects the impact-ionisation model based on edge discretisation. Options: [On, Off] | - |
+| `II_elem` | Selects the Chynoweth impact-ionisation model using full elemental discretisation. Options: [On, Off] | - |
+| `II_edge` | Selects the Chynoweth impact-ionisation model based on edge discretisation. Options: [On, Off] | - |
+| `OC_elem` | Selects the Okuto–Crowell impact-ionisation model using full elemental discretisation. Options: [On, Off] | - |
+| `OC_edge` | Selects the Okuto–Crowell impact-ionisation model based on edge discretisation. Options: [On, Off] | - |
 
 </div>
+
+### Chynoweth Impact Ionisation Model
+
+The electron ($\alpha$) and hole ($\beta$) ionisation coefficients are given by:
+
+$$
+\alpha,\;\beta(F) \;=\; A \,\exp\!\left( -\frac{B}{F} \right)
+$$
+
+where:
+
+| Symbol | Description | Units | Property (holes) | Property (electrons) |
+|--------|------------|-------|------------------|----------------------|
+| $A$ | Ionisation coefficient prefactor | cm⁻¹ | `K_aval_alpha_p` | `K_aval_alpha_n` |
+| $B$ | Field scaling parameter | V/cm | `K_aval_beta_p` | `K_aval_beta_n` |
+| $F$ | Electric field | V/cm | – | – |
+
+### Okuto–Crowell Impact Ionisation Model [1]
+The electron ($\alpha$) and hole ($\beta$) ionisation coefficients are given by:
+
+$$
+\alpha,\;\beta(F, T) \;=\; 
+a \cdot \bigl(1 + c \,(T - 300)\bigr)\cdot F^{\,n} \cdot 
+\exp\!\left[ - \left( \frac{b \cdot \bigl(1 + d\,(T - 300)\bigr)}{F} \right)^{m} \right]
+$$
+
+where:
+
+| Symbol | Description | Units | Property (holes) | Property (electrons) |
+|--------|-------------|-------|------------------|----------------------|
+| $a$  | Pre-exponential factor | cm⁻¹ | `OC_a_p` | `OC_a_n` |
+| $b$  | Field scaling parameter | V/cm | `OC_b_p` | `OC_b_n` |
+| $c$  | Temperature coefficient (prefactor) | 1/K | `OC_c_p` | `OC_c_n` |
+| $d$  | Temperature coefficient (field scaling) | 1/K | `OC_d_p` | `OC_d_n` |
+| $m$  | Exponent in exponential term | – | `OC_m_p` | `OC_m_n` |
+| $n$  | Field-power exponent | – | `OC_n_p` | `OC_n_n` |
+| $F$  | Electric field | V/cm | – | – |
+| $T$  | Lattice temperature | K | – | – |
+
+## References
+
+[1] Y. Okuto and C. R. Crowell, "Ionization coefficients in semiconductors: A nonlocalized property," *Phys. Rev. B*, vol. 10, no 10, pp. 4284–4296, 1974, doi:10.1103/PhysRevB.10.4284.
