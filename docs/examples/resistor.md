@@ -18,10 +18,10 @@ In this example project, a simple uniformly doped n-type silicon resistor is mod
 | Parameter             | Symbol       | Value               | Unit            | Description                              |
 |-----------------------|--------------|---------------------|-----------------|------------------------------------------|
 | Length                | $L$          | $1 \times 10^{-3}$  | cm              | Distance between the two contacts.       |
-| Width                 | $W$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor.                   |
-| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Vertical thickness of the resistor.      |
-| Doping Concentration  | $N_D$        | $1 \times 10^{-16}$ | cm$^{-3}$       | Uniform donor concentration.             |
-| Carrier Mobility      | $\mu_n$      | 1360                | cm$^{2}$/V·s    | Nominal electron mobility (constant).    |
+| Width                 | $W$          | $1 \times 10^{-4}$  | cm              | Width of the resistor.                   |
+| Depth                 | $D$          | $1 \times 10^{-4}$  | cm              | Depth of the resistor.                   |
+| Doping Concentration  | $N_D$        | $1 \times 10^{16}$  | cm$^{-3}$       | Uniform donor concentration.             |
+| Carrier Mobility      | $\mu_n$      | 1000                | cm$^{2}$/V·s    | Nominal electron mobility (constant).    |
 
 ## 3. Analytical Result
 
