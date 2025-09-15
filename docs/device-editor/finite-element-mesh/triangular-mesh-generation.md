@@ -18,7 +18,7 @@ To generate a finite element model:
 
 2. From this window various mesh size hints can be defined. These give the approximate size of mesh elements in the device.
    The size of the mesh can be specified for the whole device and near the metallurgical junction and oxide boundary.
-   If you require mesh refinement in other areas you can add [mesh windows].
+   If you require mesh refinement in other areas you can add [mesh windows](/device-editor/finite-element-mesh/mesh-windows).
 
 <p align="center">
   <img src={useBaseUrl('img/device-editor/finite-element-mesh/triangular-mesh-generation/02.png')} width="600"/>

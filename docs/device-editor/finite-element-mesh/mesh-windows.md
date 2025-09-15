@@ -26,10 +26,10 @@ To define a mesh window:
   <img src={useBaseUrl('img/device-editor/finite-element-mesh/mesh-windows/02.png')} width="800"/>
 </p>
 
-3. Once the window's shape has been defined the mesh window's properties dialog box will appear.  Use this dialog to set the window's properties.
+3. Once the window's shape has been defined the mesh window's properties dialog box will appear. This can also be edited later by right-clicking on the window and selecting `properties`. Use this dialog to set the window's properties.
 
 <p align="center">
-  <img src={useBaseUrl('img/device-editor/finite-element-mesh/mesh-windows/03.png')} width="800"/>
+  <img src={useBaseUrl('img/device-editor/finite-element-mesh/mesh-windows/03.png')} width="400"/>
 </p>
 
 ## Parameters
