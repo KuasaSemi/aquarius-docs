@@ -49,7 +49,7 @@ Note: If the high-field model is selected, the low-field mobility model will fee
 
 ### High Field Mobility
 Users can set high field mobility as none, e_field or j_field.
-The e_field or j_field models are used to select the high-field mobility model, which can be based on either the electric field magnitude or the magnitude of the field in the direction of the current.
+The `e_field` or `j_field` models are used to select the high-field mobility model, which can be based on either the electric field magnitude or the magnitude of the field in the direction of the current.
 
 ### High Field Calculation
 Users can set as edge or element. 
@@ -100,7 +100,9 @@ Used to select surface mobility along oxide semiconductor interfaces. This model
 </div>
 
 ### Impact Ionisation
-Users can set these option to **Off**, **Edge**, or **Element**, but only one can be selected at any time.
+There are two models for available impact ionisation, **Chynoweth** and **Okuto-Crowell**.
+
+Users can set these option to **Off**, **II_edge**, **II_elem**, **OC_edge**, **OC_elem** but only one can be selected at any time.
 
 <div class="properties-table">
 
@@ -123,22 +125,13 @@ $$
 
 where:
 
-| Symbol | Description | Units | Property |
-|--------|-------------|-------|----------|
-| $A_p$ | Ionisation coefficient prefactor for holes ($\beta$) | cm⁻¹ | `K_aval_alpha_p` |
-| $B_p$ | Field scaling parameter for holes ($\beta$) | V/cm | `K_aval_beta_p` |
-| $A_n$ | Ionisation coefficient prefactor for electrons ($\alpha$) | cm⁻¹ | `K_aval_alpha_n` |
-| $B_n$ | Field scaling parameter for electrons ($\alpha$) | V/cm | `K_aval_beta_n` |
-| $F$   | Electric field | V/cm | – |
-| $\alpha$ | Ionisation coefficient (electrons) | cm⁻¹ | computed |
-| $\beta$  | Ionisation coefficient (holes) | cm⁻¹ | computed |
+| Symbol | Description | Units | Property (holes) | Property (electrons) |
+|--------|------------|-------|------------------|----------------------|
+| $A$ | Ionisation coefficient prefactor | cm⁻¹ | `K_aval_alpha_p` | `K_aval_alpha_n` |
+| $B$ | Field scaling parameter | V/cm | `K_aval_beta_p` | `K_aval_beta_n` |
+| $F$ | Electric field | V/cm | – | – |
 
-
-### Okuto–Crowell Impact Ionisation Model
-
-The Okuto–Crowell model [1] is used to describe the temperature-dependent impact ionisation coefficients in semiconductors.
-
-
+### Okuto–Crowell Impact Ionisation Model [1]
 The electron ($\alpha$) and hole ($\beta$) ionisation coefficients are given by:
 
 $$
