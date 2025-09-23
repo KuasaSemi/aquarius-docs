@@ -1,10 +1,13 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Mesh Generation
+# Unstructured Mesh Generation
+This is the default meshing method. 
+The mesh is constructed out of triangles and is refined near the metallurgical junction, oxide boundaries and in user defined [mesh windows](/device-editor/finite-element-mesh/mesh-windows).
+The mesh technique can be toggled between this and the [structured mesh](/device-editor/finite-element-mesh/mesh-generation) from the menu via Mesh -> Use Unstructured Mesh.
 
 ## Usage Instructions
 Before creating a finite element device model, it is important to ensure that at least one region is defined.
