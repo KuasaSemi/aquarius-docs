@@ -65,8 +65,11 @@ The reverse saturation current arises from minority carrier diffusion across the
 - Using the above parameters, the saturation current was calculated to approximately be:
 
 $$
-I_s = q A \left( \frac{D_p n_i^2}{L_p N_D} + \frac{D_n n_i^2}{L_n N_A} \right) = 7.752 \times 10^{-19} A
+I_s = q A \left( \frac{D_p n_i^2}{L_p N_D} + \frac{D_n n_i^2}{L_n N_A} \right) 
 $$
+
+$I_s$ = **$7.752 \times 10^{-19} A$**
+
 
 Where:
 - $q$ = Elementary charge (C)
@@ -88,20 +91,20 @@ $$
 D = \mu \frac{kT}{q} 
 $$
 
-D_p = 11.63339990 cm$^{-3}$/s
+D_p = **11.63339990 cm$^{-3}$/s**
 
-D_n = 25.85199978 cm$^{-3}$/s
+D_n = **25.85199978 cm$^{-3}$/s**
 
 
 
 
 $L = \sqrt{D \tau}$, where $\tau$ is the minority carrier lifetime.
 
-$L_p$ = 0.00010789 cm
+$L_p$ = **0.00010789 cm**
 
-$L_n$ = 0.00016079 cm
+$L_n$ = **0.00016079 cm**
 
-The values for $D_p$, $D_n$, $tau_p$ and $tau_n$ were substituted into the saturation current equation to calculate the given value.
+The values for $D_p$, $D_n$, $tau_p$ and $tau_n$ were substituted into the **saturation current** equation to calculate the given value.
 
 ---
 
@@ -226,7 +229,7 @@ As it was done in the simple resistor example, an initial grid is defined. Here 
 
 	- Click `OK`
 
-- Repeat the above steps setting **Coordinates** of the box that will contain the mesh line to:
+    - Repeat the above steps setting **Coordinates** of the box that will contain the mesh line to:
 
 		-	`X1 = -0.1`
 
