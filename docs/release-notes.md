@@ -8,6 +8,11 @@ Below lists the changes to each version of Aquarius.
 Not all bug fixes are listed as many minor bugs are fixed each release.
 All new features and major bug fixes are listed.
 
+### 0.1.28
+
+###### Bug Fixes:
+- Fixed issue with writing multiple value sweeps in DC Voltage/Current sources.
+
 ### 0.1.27
 
 ##### Bug Fixes:
