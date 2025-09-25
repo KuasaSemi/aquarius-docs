@@ -1,16 +1,19 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Mesh Generation
+# Structured Mesh Generation
+This uses a set of user defined grid lines to define the mesh size and then refines the result near the metallurgical junction and oxide boundaries.
+The mesh technique can be toggled between this and the [unstructured mesh](/device-editor/finite-element-mesh/triangular-mesh-generation) from the menu via Mesh -> Use Unstructured Mesh.
 
 ## Overview
 Once the initial meshing grid has been defined, this command will generate the nodes at the intersections of those lines and triangulate them to form the finite element mesh. The Delaunay algorithm is used and additional checks are made to ensure optimal triangle shapes, reducing narrow or poorly shaped elements that can impact simulation accuracy.
 
 ## Usage Instructions
 Before creating a finite element device model, it is important to ensure that at least one region is defined and a suitable meshing grid has been specified.
+See [meshing grid](/device-editor/finite-element-mesh/meshing-grid).
 
 To generate a finite element model:
 1. From the Menu, select Mesh -> Generate Finite Element Mesh Model. This will open the mesh properties dialog.
