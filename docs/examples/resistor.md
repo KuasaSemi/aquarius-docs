@@ -126,7 +126,7 @@ For more detailed instructions on **defining regions**, click [here](../device-e
 
 #### 4.1.3. Define the Device Contacts
 
-With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the left and right edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied.
+With the device geometry and material properties defined, the next step is to **specify electrical contacts** to allow the device to be connected to a circuit for simulation. In this example, the top and bottom edges of the region will be used to define contacts `A` and `B`, respectively, with the default contact parameters applied.
 
 <p align="center">
   <img src={useBaseUrl('img/examples/resistor/07.png')} />
