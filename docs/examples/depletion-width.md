@@ -9,14 +9,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 1. Overview
 
-<p>	In this section, the relationship between the applied voltage and the depletion width of the PN diode produced under **Examples** will be explored. As explained under `Examples` →  `PN diode`, A PN junction diode has three regions: the n-region, the p-region and the depletion region. The depletion region cannot exist without both the n-type and p-type in contact with each other.
-</p>
+	In this section, the relationship between the applied voltage and the depletion width of the PN diode produced under **Examples** will be explored. As explained under `Examples` →  `PN diode`, A PN junction diode has three regions: the n-region, the p-region and the depletion region. The depletion region cannot exist without both the n-type and p-type in contact with each other.
 
-<p>	The depletion region width is dependent on the applied voltage across the diode. The depletion width equation is derived from using Gauss’s law for electric flux. The derivation assumes that the free electrons from the n-type region have diffused into the holes of the p-type region producing a potential difference. This potential difference is known as the **Built-in potential**. Calculations are based off the interactions between the positive and negative ions produced by the diffusion process.
-</p>
 
-<p>	An analytical model was produced to display the relationship between the applied voltage across the diode and the depletion width. The goal here being to understand the physics behind a PN junction diode.
-</p>
+	The depletion region width is dependent on the applied voltage across the diode. The depletion width equation is derived from using Gauss’s law for electric flux. The derivation assumes that the free electrons from the n-type region have diffused into the holes of the p-type region producing a potential difference. This potential difference is known as the **Built-in potential**. Calculations are based off the interactions between the positive and negative ions produced by the diffusion process.
+
+
+	An analytical model was produced to display the relationship between the applied voltage across the diode and the depletion width. The goal here being to understand the physics behind a PN junction diode.
+
 
 This section will demonstrate how to extract the depletion width from the **Results visualiser** for a given applied voltage.
 
@@ -41,7 +41,7 @@ This section will demonstrate how to extract the depletion width from the **Resu
 ## 3. Analytical Model
 ### 3.1. Ideal equation for depletion width:
 
-<p>The following is the equation for the depletion width and assumes the diode is ideal. The definition of an ideal diode can be found in the PN diode found in **Examples**:</p>
+The following is the equation for the depletion width and assumes the diode is ideal. The definition of an ideal diode can be found in the PN diode found in **Examples**:
 
 **insert image showing how depletion region forms with brief explanaition, I will make **
 
@@ -70,9 +70,11 @@ Where $n_i$ = intrinsic carrier coefficient
 
 #### 3.1.2. Proving the depletion width equation:
 
-<p>	In order to help understand some of the physics that leads to the formation of the depletion region, the equation will now be derived. First, we start with Poisson's equation for electric fields. In the context of the depletion region, we are only interested in the direction that travels perpendicular inside the depletion region. Hence the Poisson equation becomes: </p>
+	In order to help understand some of the physics that leads to the formation of the depletion region, the equation will now be derived. First, we start with Poisson's equation for electric fields. In the context of the depletion region, we are only interested in the direction that travels perpendicular inside the depletion region. Hence the Poisson equation becomes:
 
-$\frac{d^2V}{dy^2} = \frac{\rho}{\varepsilon_s}$
+$$
+\frac{d^2V}{dy^2} = \frac{\rho}{\varepsilon_s}
+$$
 
 - Where:
 	- $V$ = electric potential
@@ -110,6 +112,11 @@ Now it will be shown how to produce the necessary plots in order to find the dep
 
 - Once the window has opened select `Cut Line Plot`.
 
+
+<p align="center">
+  <img src={useBaseUrl('img/examples/depletion-width/01-cut-line-plot.png')}/>
+</p>
+
 <p align="center">
   <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/01-cut-line-plot.png')}/>
 </p>
@@ -125,7 +132,6 @@ Now it will be shown how to produce the necessary plots in order to find the dep
 <p align="center">
   <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/02-set-net-charge/02-set-verticle-orientation.png')}/>
 </p>
-
 
 - Now the graph can be produced by pressing `New Plot` at the bottom right of **Cut Line Plot Settings**.
 
@@ -149,15 +155,16 @@ Figure 1:
   <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/02-set-net-charge/08-showing-both-plots-net-charge.png')}/>
 </p>
 
-<p>
+
 The next example graph that will be produced will be carrier concentration plotted against distance across the PN diode for each possible carrier, electrons and holes. Both examples shown can be used to get the depletion width, the method will be shown in the next sub-section.
-</p>
+
 
 - Select `Cut Line Plot` to open a new tab for this graph.
 - Choose **Electron Concentration** this time and repeat previous steps to produce this graph of electron concentration against distance.
  
 <p align="center">
-  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/03-set-carrier-concentration/01-set-electron-concentration.png')}/>
+  <img src={useBaseUrl('img/examples/depletion-width/03-Set-Carrier-Concentration/01-set-electron-concentration.png')}/>
+  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/03-set-carrier-concentration/05-show-both-plots.png')}/>
 </p>
 
 - Now carry out these steps once more but select **Hole Concentration** under the **Variable Plot**. Add this line to the same graph. 
@@ -166,7 +173,7 @@ The next example graph that will be produced will be carrier concentration plott
 Figure 2:
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/03-set-carrier-concentration/05-show-both-plots')}/>
+  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/03-set-carrier-concentration/05-show-both-plots.png')}/>
 </p>
 
 ### 3.2.2. Interpreting the data
@@ -187,16 +194,16 @@ Figure 2:
 </p>
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/04-Interpreting-the-Data/03-step-function-net-chrge-')}/>
+  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/04-Interpreting-the-Data/03-step-function-net-chrge.png')}/>
 </p>
 
-<p>
+
 The graphs above show you how the realistic graph from the simulation varies from what the graph would look like according to the ideal equations. Taking the net charge graph for example, the ideal graph cuts through the simulated graph exactly in the middle of where the net charge starts to drop, in this case approximately at $5 \times 10^{15}$ . This is because this centre value would be where the average position accross the diode at which the charge would drop. The step function allows you to clearly see where the depletion region lies in this example. This same reasoning applies to the carrier concentration graph.
-</p>
 
-<p>
+
+
 The depletion width can be extracted fairly easily using the logic explained in the bullet point above. For the carrier concentration graph, take the two points at which the verticle lines cut the graphs and subtract them from each other. For the net charge graphs, take the points at which the two verticle lines cut the graph either side of the central verticle line. Both of these methods will give you the depletion width.
-</p>
+
 
 
 - Depletion width values were calculated from data produced in Aquarius and then plotted. Note the values displayed on the table have been rounded to 4 significant figures.
@@ -222,7 +229,7 @@ The depletion width can be extracted fairly easily using the logic explained in 
 - The data from the table above can be shown in the graph bellow:
 
 <p align="center">
-  <img src={useBaseUrl('img/examples/depletion-width/producing-graphs/04-Interpreting-the-Data/04-depletion-width-vs-voltage-')}/>
+  <img src={useBaseUrl('img/examples/depletion-width/04-Interpreting-the-Data/04-depletion-width-vs-voltage-')}/>
 </p>
 
 - It is apparent that the graphs have an offset
